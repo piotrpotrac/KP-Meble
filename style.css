@@ -1,3 +1,7 @@
+:root {
+  --color-1: #5ec576;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +19,39 @@ body {
   background-color: #f3f3f3;
   height: 100vh;
   padding: 2rem;
+}
+
+/* navigacja */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
+}
+
+.nav_logo {
+  height: 4.5rem;
+  transition: all 0.3s;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_item {
+  list-style: none;
+  background-color: var(--color-1);
+  width: 15rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 2rem;
 }

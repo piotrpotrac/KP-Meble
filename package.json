@@ -1,0 +1,22 @@
+{
+  "name": "meblekp",
+  "version": "1.0.0",
+  "description": "Projekt strony internetowej dla firmy KP Meble zajmującą się tworzeniem mebli i zabudów meblowych pod wymiar.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrpotrac/KP-Meble.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotrpotrac/KP-Meble/issues"
+  },
+  "homepage": "https://github.com/piotrpotrac/KP-Meble#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
