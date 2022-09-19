@@ -9,47 +9,35 @@
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
       rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>KP Meble</title>
     <script defer type="module" src="script.js"></script>
   </head>
-  <body>
-    <nav class="nav">
-      <img class="nav_logo" src="logo.png" alt="logo" />
-      <ul class="nav_links">
-        <li class="nav_item">Firma</li>
-        <li class="nav_item">Realizacje</li>
-        <li class="nav_item">Oferta</li>
-        <li class="nav_item">Kontakt</li>
+  <body class="container">
+    <nav class="section-1 nav">
+      <div class="nav__logo">
+        <a href="#" class="nav__logo-anc"
+          ><img src="img/logo.png" alt="Logo" class="nav__img-logo"
+        /></a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__list__anch">O nas</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__list__anch">Oferta</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__list__anch">Projekty</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__list__anch">Współpraca</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__list__anch">Kontakt</a>
+        </li>
       </ul>
     </nav>
-    <main class="main">
-      <section class="section section1">
-        <div class="container container1">
-          <h1>Nasza Firma!</h1>
-        </div>
-      </section>
-      <section class="section section2">
-        <div class="container container2"></div>
-      </section>
-      <section class="section section3">
-        <div class="container container3"></div>
-      </section>
-      <section class="section section4">
-        <div class="container container4"></div>
-      </section>
-      <section class="section section5">
-        <div class="container container5"></div>
-      </section>
-    </main>
-    <main class="main">
-      <section class="section section_1">
-        <div class="container container_1"></div>
-      </section>
-    </main>
-
-    <main class="app"></main>
-
-    <footer>&copy; by Piotr Potrac</footer>
+    <section class="header">
+      <h1 class="header__title">Twoje meble na wymiar</h1>
+    </section>
   </body>
 </html>

@@ -1,0 +1,54 @@
+// COLOR VARIABLES
+
+$color-primary-x: #efc17b;
+$color-primary-1: #f5b85b;
+$color-primary-2: #a86f1a;
+$color-primary-3: #885a16;
+$color-primary-4: #3b2402;
+
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 6rem repeat(3, 1fr);
+}

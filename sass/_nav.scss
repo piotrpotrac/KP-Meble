@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba($color-primary-3, 0.5)),
+    to(rgba($color-primary-4, 0.5))
+  );
+
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+  }
+
+  &__img-logo {
+    width: 10rem;
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3rem;
+    &__anch {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    padding: 2rem 3rem;
+
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+}

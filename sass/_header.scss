@@ -1,0 +1,21 @@
+.header {
+  height: calc(100vh - 6rem);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba($color-primary, 0.5)),
+      to(rgba($color-primary-dark, 0.5))
+    ),
+    url(../img/home-1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: green;
+
+  &__title {
+    color: #fff;
+  }
+}

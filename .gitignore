@@ -2,4 +2,4 @@ dist
 node_modules
 .parcel_cache
 .pretierrc
-
+.package-lock.json

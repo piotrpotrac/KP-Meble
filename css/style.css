@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 6rem repeat(3, 1fr);
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(136, 90, 22, 0.5)), to(rgba(59, 36, 2, 0.5)));
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+.nav__img-logo {
+  width: 10rem;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3rem;
+}
+.nav__list__anch {
+  text-decoration: none;
+  color: #fff;
+}
+.nav__item {
+  padding: 2rem 3rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.header {
+  height: calc(100vh - 6rem);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(198, 153, 99, 0.5)), to(rgba(178, 132, 81, 0.5))), url(../img/home-1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: green;
+}
+.header__title {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
