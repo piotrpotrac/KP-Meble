@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-rows: 6rem repeat(4, 1fr) 10rem;
+}
+
+.header {
+  height: 100vh;
+  transform: translateY(-6rem);
+}
+
+.offer {
+  transform: translateY(-6rem);
+}

@@ -1,16 +1,17 @@
 .nav {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background-image: -webkit-gradient(
     linear,
     left top,
     right bottom,
-    from(rgba($color-primary-3, 0.5)),
-    to(rgba($color-primary-4, 0.5))
+    from(rgba($color-primary-3, 0.8)),
+    to(rgba($color-primary-4, 0.8))
   );
-
   display: flex;
   justify-content: space-between;
+  z-index: 1000;
 
   &__logo {
     width: 10rem;
@@ -26,13 +27,21 @@
 
   &__list {
     list-style: none;
-
     display: flex;
     justify-content: space-around;
     margin-right: 3rem;
-    &__anch {
+    cursor: pointer;
+
+    &__anch:link,
+    &__anch:visited {
       text-decoration: none;
       color: #fff;
+      transition: all 0.2s;
+    }
+
+    &__anch:hover,
+    &__anch:active {
+      color: $color-primary;
     }
   }
 

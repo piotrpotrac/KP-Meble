@@ -1,0 +1,24 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.header__title {
+  font-size: 12rem;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1.1rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(#000000, 0.2);
+  transform: translateX(-10rem);
+  animation: moveInLeft ease-in 1.5s;
+  &__sub {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+    animation: moveInRight ease-in 1.5s;
+    transform: translateX(10rem);
+  }
+}

@@ -17,10 +17,6 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
 
-// FONT VARIABLES
-$font-primary: 'Nunito', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
-
 //RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; //1200px
 $bp-large: 62.5em; //1000px
@@ -40,15 +36,6 @@ html {
   font-size: 62.5%; // 10px
 }
 
-body {
-  font-family: $font-primary;
-  color: #fff;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
 .container {
-  position: relative;
-  display: grid;
-  grid-template-rows: 6rem repeat(3, 1fr);
+  color: black;
 }
