@@ -8,7 +8,7 @@ body {
 .header__title {
   font-size: 12rem;
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 1.1rem;
   font-weight: 700;
   text-shadow: 3px 3px rgba(#000000, 0.2);
@@ -20,5 +20,18 @@ body {
     font-weight: 400;
     animation: moveInRight ease-in 1.5s;
     transform: translateX(10rem);
+  }
+}
+
+.offer {
+  &__header {
+    font-size: 6rem;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }

@@ -14,15 +14,16 @@
   z-index: 1000;
 
   &__logo {
-    width: 10rem;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 3rem;
+    overflow: hidden;
   }
 
   &__img-logo {
-    width: 10rem;
+    height: 9rem;
   }
 
   &__list {
