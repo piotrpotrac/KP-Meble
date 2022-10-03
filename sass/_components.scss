@@ -1,0 +1,22 @@
+.btn {
+  &__brn {
+    border-radius: 4px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 4.4rem;
+    border: 1px solid $color-primary-dark;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    height: 44px;
+    background: $color-primary-dark;
+    padding: 0 15px;
+    color: #fff;
+  }
+
+  &__brn:hover {
+    text-decoration: underline;
+    background: #fff;
+    color: $color-primary-dark;
+  }
+}

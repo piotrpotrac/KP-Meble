@@ -1,0 +1,41 @@
+.about-us {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 50%;
+    & img {
+      width: 100%;
+      padding: 10rem;
+    }
+  }
+
+  &__br {
+    border: 1px solid $color-grey-dark-3;
+    height: 50rem;
+    width: 1px;
+  }
+
+  &__info {
+    width: 50%;
+    padding: 10rem;
+    color: $color-grey-dark-3;
+  }
+
+  &__header {
+    font-size: 4rem;
+    letter-spacing: 0.7;
+  }
+
+  &__par {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 50%;
+  }
+}

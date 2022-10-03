@@ -16,6 +16,7 @@ $color-grey-light-2: #aaa;
 
 $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
+$color-grey-dark-3: #272727;
 
 //RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; //1200px
@@ -33,10 +34,12 @@ $bp-small: 37.5em; //600px
 
 html {
   box-sizing: border-box;
+  margin: 0;
   font-size: 62.5%; // 10px
 }
 
 .container {
-  width: 100vw;
+  width: 100% !important;
   color: black;
+  // margin: 1rem;
 }

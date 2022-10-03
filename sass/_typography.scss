@@ -6,11 +6,12 @@ body {
 }
 
 .header__title {
-  font-size: 12rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14rem;
   color: #fff;
   line-height: 1.5;
   letter-spacing: 1.1rem;
-  font-weight: 700;
+  font-weight: 400;
   text-shadow: 3px 3px rgba(#000000, 0.2);
   transform: translateX(-10rem);
   animation: moveInLeft ease-in 1.5s;
