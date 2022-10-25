@@ -43,3 +43,15 @@ html {
   color: black;
   // margin: 1rem;
 }
+
+.section {
+  padding: 5rem 3rem;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

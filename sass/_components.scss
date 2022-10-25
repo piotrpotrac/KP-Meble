@@ -1,5 +1,5 @@
 .btn {
-  &__brn {
+  &__brown {
     border-radius: 4px;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -9,14 +9,177 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     height: 44px;
-    background: $color-primary-dark;
+    // background: $color-primary-dark;
+    background: #b69d50;
     padding: 0 15px;
     color: #fff;
   }
 
-  &__brn:hover {
+  &__brown:hover {
     text-decoration: underline;
     background: #fff;
-    color: $color-primary-dark;
+    // color: $color-primary-dark;
+    color: #8f7b3f;
+  }
+
+  &__inline {
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  &__inline:hover {
+    color: black;
+  }
+}
+
+// Swiper for gallery
+.swiper {
+  width: 900px;
+  height: 500px;
+}
+
+.swiper-wrapper {
+  width: 90rem;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 1500;
+
+  &__hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @keyframes ldio-6gjnna25q6t {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  & .ldio-6gjnna25q6t div {
+    left: 94px;
+    top: 42px;
+    position: absolute;
+    animation: ldio-6gjnna25q6t linear 1.0204081632653061s infinite;
+    background: #b69d50;
+    width: 12px;
+    height: 32px;
+    border-radius: 6px / 13.76px;
+    transform-origin: 6px 58px;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -0.9183673469387754s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(2) {
+    transform: rotate(36deg);
+    animation-delay: -0.8163265306122448s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(3) {
+    transform: rotate(72deg);
+    animation-delay: -0.7142857142857142s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(4) {
+    transform: rotate(108deg);
+    animation-delay: -0.6122448979591836s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(5) {
+    transform: rotate(144deg);
+    animation-delay: -0.5102040816326531s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(6) {
+    transform: rotate(180deg);
+    animation-delay: -0.4081632653061224s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(7) {
+    transform: rotate(216deg);
+    animation-delay: -0.3061224489795918s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(8) {
+    transform: rotate(252deg);
+    animation-delay: -0.2040816326530612s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(9) {
+    transform: rotate(288deg);
+    animation-delay: -0.1020408163265306s;
+    background: #b69d50;
+  }
+
+  & .ldio-6gjnna25q6t div:nth-child(10) {
+    transform: rotate(324deg);
+    animation-delay: 0s;
+    background: #b69d50;
+  }
+
+  .loadingio-spinner-spinner-n0ice66rx4s {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  & .ldio-6gjnna25q6t {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+
+  & .ldio-6gjnna25q6t div {
+    box-sizing: content-box;
   }
 }

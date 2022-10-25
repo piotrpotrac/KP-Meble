@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="icon"  type="image/png" href="./img/logo.png">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -25,7 +33,7 @@
     <nav class="nav">
       <div class="nav__logo">
         <a href="#" class="nav__logo-anc"
-          ><img src="img/kp.png" alt="Logo" class="nav__img-logo"
+          ><img src="img/logo.png" alt="Logo" class="nav__img-logo"
         /></a>
       </div>
       <ul class="nav__list">
@@ -36,7 +44,7 @@
           <a href="#offer" class="nav__list__anch">Oferta</a>
         </li>
         <li class="nav__item">
-          <a href="#projects" class="nav__list__anch">Projekty</a>
+          <a href="#gallery" class="nav__list__anch">Projekty</a>
         </li>
         <li class="nav__item">
           <a href="#cooperation" class="nav__list__anch">Współpraca</a>
@@ -48,11 +56,15 @@
     </nav>
 
     <section class="header">
-      <h1 class="header__title">Meble</h1>
-      <h2 class="header__title header__title__sub">w Twoim stylu</h2>
+      <div class="header__container">
+        <h2 class="header__title header__title__sub">Nasza firma zajmuje się produkcją mebli pod zabudowy. Oferujemy swoje usługi na terenie całego Trójmiasta.</h2>
+        <!-- <h1 class="header__title">Meble</h1>
+        <h2 class="header__title header__title__sub">które pokochasz</h2> -->
+      </div>
+      <a href="#about-us"><button class="header__btn btn__brown">Dowiedz się więcej</button></a>
     </section>
 
-    <section class="about-us" id="about-us">
+    <section class="about-us section" id="about-us">
       <div class="about-us__img">
         <img src="img/kuchnia-o_nas.jpg" alt="Kuchnia-o_nas" />
       </div>
@@ -64,15 +76,15 @@
           sprostać wymaganiom klientów korzystamy z topowych marek płyt
           meblowych i okuć. Szanujemy Państwa czas, dlatego do każdego zlecenia
           podchodzimy z pełnym zaangażowaniem, aby jak najszybciej i
-          najdokładniej wykonać dla państwa zamówienie.
+          najdokładniej wykonać Wasze zamówienie.
         </p>
 
-        <button class="about-us__btn btn__brn">Umów się teraz</button>
+        <button class="about-us__btn btn__brown btn--show-modal">Umów się teraz</button>
       </div>
     </section>
 
-    <section class="offer" id="offer">
-      <h2 class="offer__header">Oferujemy:</h2>
+    <section class="offer section" id="offer">
+      <h3 class="offer__header">Wykonamy dla Ciebie:</h3>
       <div class="offer__container">
         <div class="offer__card">
           <div class="offer__item">
@@ -145,28 +157,64 @@
           </div>
           <img src="img/wlasne-projekty.jpg" alt="Projekt" class="offer__img" />
         </div>
-
-        <!-- <div class="offer__cards">
-          <div class="offer__icon-box">
-            <img src="img/svg/meble-kuchenne.svg" alt="Meble kuchenne" />
-            <div class="offer__title">Zabudowy kuchenne</div>
-          </div>
-
-          <div class="offer__img-con">
-            <img
-              src="img/kuchnia_1.jpeg"
-              alt="Kuchnia na wymiar"
-              class="offer__img"
-            />
-          </div>
-        </div> -->
       </div>
     </section>
 
-    <section class="projects" id="projects">Projekty</section>
+    <section class="gallery section" id="gallery">
+      <div class="gallery__header">Dotychczasowe realizacje:</div>
+      <div class="gallery__swiper swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/kuchnia-czarna.jpg" alt="Kuchnia 1" class="gallery__img"/></div>
+          <div class="swiper-slide"><img src="img/komoda.jpg" alt="Szafa" class="gallery__img"/></div>
+          <div class="swiper-slide"><img src="img/kuchnia-o_nas.jpg" alt="Szafa" class="gallery__img"/></div>
+          <div class="swiper-slide"><img src="img/kuchnia_1.jpeg" alt="Szafa" class="gallery__img"/></div>
+          <div class="swiper-slide"><img src="img/lazienka.jpg" alt="Szafa" class="gallery__img"/></div>
+          <div class="swiper-slide"><img src="img/regal.jpg" alt="Szafa" class="gallery__img"/></div>
+          <div class="swiper-slide"><img src="img/garderoba.jpg" alt="Szafa" class="gallery__img"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+    </section>
 
     <section class="cooperation" id="cooperation">Współpraca</section>
+    <section class="contact" id="contact">
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Napisz do nas!
+        </h2>
+        <form class="modal__form">
+          <label>Imię:</label>
+          <input type="text" />
+          <label>Nazwisko:</label>
+          <input type="text" />
+          <label>Email:</label>
+          <input type="email" />
+          <label  for="msg" class="modal__form__text-lbl">Wiadomość:</label>
+          <textarea  id="msg" name="msg" cols="30" rows="10" class="modal__form__textarea" placeholder="Treść wiadomości:" style="font-size:14pt"></textarea>
+          <button class="btn btn__brown">Wyślij &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </section>
+    <div class="loader">
+      <div class="loadingio-spinner-spinner-n0ice66rx4s"><div class="ldio-6gjnna25q6t">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div></div>
+    </div>
 
     <footer class="footer" id="contact">Stopka</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   
+   
   </body>
 </html>

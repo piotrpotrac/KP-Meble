@@ -2,18 +2,32 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(rgba($color-primary-3, 1)),
-    to(rgba($color-primary-4, 1))
-  );
-  opacity: 0.8;
+
   display: flex;
   justify-content: space-between;
   z-index: 1000;
 
+  &__background-gradient {
+    background-image: linear-gradient(
+      135deg,
+      hsl(45deg 41% 51%) 0%,
+      hsl(45deg 45% 48%) 16%,
+      hsl(44deg 49% 45%) 23%,
+      hsl(43deg 53% 42%) 29%,
+      hsl(43deg 57% 38%) 34%,
+      hsl(43deg 61% 35%) 39%,
+      hsl(43deg 63% 34%) 43%,
+      hsl(42deg 65% 32%) 48%,
+      hsl(43deg 67% 31%) 52%,
+      hsl(42deg 68% 29%) 57%,
+      hsl(43deg 70% 28%) 61%,
+      hsl(43deg 70% 27%) 66%,
+      hsl(43deg 68% 27%) 71%,
+      hsl(43deg 67% 26%) 77%,
+      hsl(43deg 65% 26%) 84%,
+      hsl(43deg 65% 25%) 100%
+    );
+  }
   &__logo {
     width: auto;
     display: flex;
@@ -21,6 +35,7 @@
     align-items: center;
     margin-left: 3rem;
     overflow: hidden;
+    // margin-left: 8%;
   }
 
   &__img-logo {
@@ -34,25 +49,42 @@
     margin-right: 3rem;
     cursor: pointer;
 
+    &__anch {
+      position: relative;
+      display: block;
+    }
+
     &__anch:link,
     &__anch:visited {
       text-decoration: none;
       color: #fff;
       transition: all 0.2s;
-      display: block;
     }
 
     &__anch:hover,
     &__anch:active {
-      color: $color-primary;
+      // color: $color-primary;
       transform: translateY(-2px);
+    }
+    &__anch:after {
+      background: #fff;
+      content: '';
+      display: inline-block;
+      height: 2px;
+      margin: auto;
+      position: absolute;
+      bottom: -0px;
+      left: 0;
+      right: 0;
+      transition: all 300ms;
+      width: 0%;
+    }
+    &__anch:hover:after {
+      width: 100%;
     }
   }
 
   &__item {
     padding: 2rem 3rem;
-
-    font-size: 1.7rem;
-    font-weight: bold;
   }
 }
