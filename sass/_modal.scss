@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80rem;
+  height: 100vh;
   background-color: #f3f3f3;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
@@ -25,13 +26,13 @@
 
 .modal__header {
   font-size: 3.25rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
 .modal__form {
-  margin: 0 3rem;
+  margin: 0 2.5rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -43,20 +44,15 @@
   }
 
   &__textarea {
-    height: 20rem;
+    height: 18rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
 }
 
 .modal__form label {
   font-size: 1.7rem;
   font-weight: 500;
-}
-
-.modal__form input {
-  font-size: 1.7rem;
-  padding: 1rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
 }
 
 .modal__form button {
@@ -80,4 +76,37 @@
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+.form {
+  > input {
+    width: 100%;
+    background: #eee;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+
+    &:focus {
+      // removing default focus style
+      outline: 0;
+      // adding new one
+      background: white;
+    }
+  }
+  &__surname:valid,
+  &__name:valid,
+  &__email:valid,
+  &__tel:valid {
+    background: url(../img/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+  }
+
+  &__surname:user-invalid,
+  &__name:user-invalid,
+  &__email:user-invalid,
+  &__tel:user-invalid {
+    background: rgb(255, 168, 168);
+  }
 }

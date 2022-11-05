@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<link rel="icon"  type="image/png" href="./img/logo.png">
+    <meta
+      name="description"
+      content="Firma wykonująca meble na wymiar, zabudowy meblowe, kuchnie, łazienki oraz komody w trójmieście."
+    />
+    <meta name="keywords" content="meble, zabudowy kuchenne" />
+    <meta name="author" content="Piotr Potrac" />
+    <meta name="copyright" content="Copyright Piotr Potrac" />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
 
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
@@ -26,10 +32,27 @@
       rel="stylesheet"
     /> -->
     <link rel="stylesheet" href="css/style.css?v=2" />
-    <title>KP Meble</title>
-    <script defer type="module" src="script.js"></script>
+    <title>KP Meble na wymiar - Trójmiasto</title>
+    <script defer src="script.js"></script>
   </head>
   <body class="container">
+    <div class="loader">
+      <div class="loadingio-spinner-spinner-n0ice66rx4s">
+        <div class="ldio-6gjnna25q6t">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
     <nav class="nav">
       <div class="nav__logo">
         <a href="#" class="nav__logo-anc"
@@ -57,11 +80,14 @@
 
     <section class="header">
       <div class="header__container">
-        <h2 class="header__title header__title__sub">Nasza firma zajmuje się produkcją mebli pod zabudowy. Oferujemy swoje usługi na terenie całego Trójmiasta.</h2>
-        <!-- <h1 class="header__title">Meble</h1>
-        <h2 class="header__title header__title__sub">które pokochasz</h2> -->
+        <h2 class="header__title header__title__sub">
+          Nasza firma zajmuje się produkcją <strong>mebli pod zabudowy</strong>.
+          Oferujemy swoje usługi na terenie całego <strong>Trójmiasta</strong>.
+        </h2>
       </div>
-      <a href="#about-us"><button class="header__btn btn__brown">Dowiedz się więcej</button></a>
+      <a href="#about-us"
+        ><button class="header__btn btn__brown">Dowiedz się więcej</button></a
+      >
     </section>
 
     <section class="about-us section" id="about-us">
@@ -79,7 +105,9 @@
           najdokładniej wykonać Wasze zamówienie.
         </p>
 
-        <button class="about-us__btn btn__brown btn--show-modal">Umów się teraz</button>
+        <button class="about-us__btn btn__brown btn--show-modal">
+          Umów się teraz
+        </button>
       </div>
     </section>
 
@@ -166,55 +194,149 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="img/kuchnia-czarna.jpg" alt="Kuchnia 1" class="gallery__img"/></div>
-          <div class="swiper-slide"><img src="img/komoda.jpg" alt="Szafa" class="gallery__img"/></div>
-          <div class="swiper-slide"><img src="img/kuchnia-o_nas.jpg" alt="Szafa" class="gallery__img"/></div>
-          <div class="swiper-slide"><img src="img/kuchnia_1.jpeg" alt="Szafa" class="gallery__img"/></div>
-          <div class="swiper-slide"><img src="img/lazienka.jpg" alt="Szafa" class="gallery__img"/></div>
-          <div class="swiper-slide"><img src="img/regal.jpg" alt="Szafa" class="gallery__img"/></div>
-          <div class="swiper-slide"><img src="img/garderoba.jpg" alt="Szafa" class="gallery__img"/></div>
+          <div class="swiper-slide">
+            <img
+              src="img/kuchnia-czarna.jpg"
+              alt="Kuchnia 1"
+              class="gallery__img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/komoda.jpg" alt="Szafa" class="gallery__img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/kuchnia-o_nas.jpg" alt="Szafa" class="gallery__img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/kuchnia_1.jpeg" alt="Szafa" class="gallery__img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/lazienka.jpg" alt="Szafa" class="gallery__img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/regal.jpg" alt="Szafa" class="gallery__img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/garderoba.jpg" alt="Szafa" class="gallery__img" />
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-      
+
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-      
+      </div>
     </section>
 
     <section class="cooperation" id="cooperation">Współpraca</section>
     <section class="contact" id="contact">
       <div class="modal hidden">
         <button class="btn--close-modal">&times;</button>
-        <h2 class="modal__header">
-          Napisz do nas!
-        </h2>
-        <form class="modal__form">
+        <h2 class="modal__header">Napisz do nas!</h2>
+        <form
+          class="modal__form form"
+          onsubmit="sendEmail(); reset(); return false"
+        >
           <label>Imię:</label>
-          <input type="text" />
+          <input
+            type="text"
+            class="form__surname"
+            pattern="[a-zA-Ząłóżźćęśń]+"
+            required
+          />
           <label>Nazwisko:</label>
-          <input type="text" />
+          <input
+            type="text"
+            class="form__name"
+            pattern="[a-zA-Ząłóżźćęśń]+"
+            required
+          />
+          <label>Telefon:</label>
+          <input type="tel" class="form__tel" pattern="[0-9]{9}" required />
           <label>Email:</label>
-          <input type="email" />
-          <label  for="msg" class="modal__form__text-lbl">Wiadomość:</label>
-          <textarea  id="msg" name="msg" cols="30" rows="10" class="modal__form__textarea" placeholder="Treść wiadomości:" style="font-size:14pt"></textarea>
-          <button class="btn btn__brown">Wyślij &rarr;</button>
+          <input
+            type="email"
+            class="form__email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{2,5}$"
+            required
+          />
+          <label for="msg" class="modal__form__text-lbl">Wiadomość:</label>
+          <textarea
+            id="msg"
+            name="msg"
+            cols="30"
+            rows="8"
+            class="modal__form__textarea"
+            placeholder=" Treść wiadomości:"
+            style="font-size: 12pt"
+            required
+          ></textarea>
+          <button type="submit" class="btn btn__brown">Wyślij &rarr;</button>
         </form>
       </div>
       <div class="overlay hidden"></div>
     </section>
-    <div class="loader">
-      <div class="loadingio-spinner-spinner-n0ice66rx4s"><div class="ldio-6gjnna25q6t">
-        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        </div></div>
-    </div>
 
-    <footer class="footer" id="contact">Stopka</footer>
-
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="column">
+          <div class="company">
+            <h1 class="company__name">Meble KP</h1>
+            <img src="./img/logo.png" alt="MebleKP-logo" />
+          </div>
+          <div class="contact-data">
+            <div class="adress">
+              <img
+                src="./img/home_pin_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="Adress"
+              />
+              <p>
+                84-217 Łebno <br />
+                ul.Smażyńska 24A
+              </p>
+            </div>
+            <div class="tel">
+              <img
+                src="./img/call_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="Telefon"
+              />
+              <a href="tel:+48 509977586"><span>509977586</span></a>
+            </div>
+            <div class="mail">
+              <img src="./img/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="Mail" />
+              <a href="mailto:meblekp.gmail.com"> meblekp@gmail.com </a>
+            </div>
+          </div>
+          <button class="about-us__btn btn__brown btn--show-modal">
+            Kontakt
+          </button>
+        </div>
+        <div class="column">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about-us" class="nav__list__anch">O nas</a>
+            </li>
+            <li class="nav__item">
+              <a href="#offer" class="nav__list__anch">Oferta</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__list__anch">Projekty</a>
+            </li>
+            <li class="nav__item">
+              <a href="#cooperation" class="nav__list__anch">Współpraca</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="row">
+            Piotr Potrac Copyright © 2022 - All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   
-   
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

@@ -6,8 +6,8 @@ window.addEventListener('load', () => {
 
   loader.classList.add('loader__hidden');
 
-  loader.addEventListener('transitionend', () => {
-    document.body.removeChild('loader');
+  loader.addEventListener('transitioned', () => {
+    document.body.removeChild(loader);
   });
 });
 
@@ -25,10 +25,23 @@ window.addEventListener(`scroll`, function (e) {
   }
 });
 
+// Swiper gallery
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
   loop: true,
+  autoplay: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pauseOnMouseEnter: true,
+  // Disable preloading of all images
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: {
+    loadPrevNext: true,
+  },
 
   // If we need pagination
   pagination: {
@@ -98,3 +111,20 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+// Email Form
+
+const sendEmail = function () {
+  Email.send({
+    SecureToken: 'd1069e52-dcd4-427f-9ea1-f114cc9bc144',
+    To: 'dlamnieok10@gmail.com',
+    From: 'admin@meblekp.pl',
+    Subject: `Nowe zapytanie MebleKP.pl`,
+    Body: `Dane: ${document.querySelector('.form__surname').value} ${
+      document.querySelector('.form__name').value
+    } <br/>
+      email: ${document.querySelector('.form__email').value} <br/>
+      Telefon: +48${document.querySelector('.form__tel').value} <br/>
+      Wiadomość: ${document.querySelector('.modal__form__textarea').value}`,
+  }).then(message => alert('Wiadomość została wysłana.'));
+};

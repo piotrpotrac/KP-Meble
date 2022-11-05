@@ -2,10 +2,10 @@
   position: sticky;
   top: 0;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   z-index: 1000;
+  transition: all 2s;
 
   &__background-gradient {
     background-image: linear-gradient(
