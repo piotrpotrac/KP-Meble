@@ -117,7 +117,7 @@ document.addEventListener('keydown', function (e) {
 const sendEmail = function () {
   Email.send({
     SecureToken: 'd1069e52-dcd4-427f-9ea1-f114cc9bc144',
-    To: 'dlamnieok10@gmail.com',
+    To: 'meblekp@gmail.com',
     From: 'admin@meblekp.pl',
     Subject: `Nowe zapytanie MebleKP.pl`,
     Body: `Dane: ${document.querySelector('.form__surname').value} ${
