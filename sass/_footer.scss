@@ -19,12 +19,79 @@
     hsl(43deg 65% 26%) 84%,
     hsl(43deg 65% 25%) 100%
   );
-  display: flex;
+  color: #fff;
+  // align-items: center;
 
-  & .column {
-    // display: flex;
-    // flex-direction: column;
-    width: 49%;
-    display: inline;
+  &__row {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+
+    .footer__column {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      text-align: left;
+
+      & .column__items {
+        display: block;
+        margin: 1rem auto;
+
+        & .column__item {
+          width: 100%;
+          margin: 1.5rem;
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+
+          & img {
+            width: 3rem;
+            margin-right: 1.5rem;
+            fill: #fff;
+          }
+
+          & a:link,
+          & a:visited {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          & a:hover,
+          & a:active {
+            color: rgb(170, 170, 170);
+          }
+        }
+      }
+
+      .company {
+        display: flex;
+
+        .slogan {
+          margin: auto 0;
+          h1 {
+            font-weight: 400;
+            font-size: 3.2rem;
+          }
+          h3 {
+            font-weight: 300;
+            font-size: 1.6rem;
+          }
+        }
+
+        .logo {
+          height: 14rem;
+          margin-right: 2rem;
+        }
+      }
+
+      & button {
+        width: 10rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
   }
 }
