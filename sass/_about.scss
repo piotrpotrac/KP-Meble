@@ -7,6 +7,9 @@
     & img {
       width: 100%;
       padding: 10rem;
+      @media only screen and (max-width: $bp-large) {
+        padding: 5rem;
+      }
     }
   }
 
@@ -20,6 +23,10 @@
     width: 50%;
     padding: 10rem;
     color: $color-grey-dark-3;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 5rem;
+    }
   }
 
   &__header {

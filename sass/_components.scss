@@ -164,9 +164,12 @@
 
 // Swiper for gallery
 .swiper {
-  max-width: 900px;
-
-  max-height: 500px;
+  width: 80vw;
+  height: calc(5 / 9 * 80vw);
+  @media only screen and (max-width: $bp-small) {
+    width: 95vw;
+    height: calc(5 / 9 * 95vw);
+  }
 }
 
 .swiper-wrapper {

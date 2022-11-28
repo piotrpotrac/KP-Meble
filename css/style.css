@@ -264,8 +264,14 @@ body {
 }
 
 .swiper {
-  max-width: 900px;
-  max-height: 500px;
+  width: 80vw;
+  height: 44.4444444444vw;
+}
+@media only screen and (max-width: 37.5em) {
+  .swiper {
+    width: 95vw;
+    height: 52.7777777778vw;
+  }
 }
 
 .swiper-wrapper {
@@ -533,6 +539,11 @@ body {
   width: 100%;
   padding: 10rem;
 }
+@media only screen and (max-width: 62.5em) {
+  .about-us__img img {
+    padding: 5rem;
+  }
+}
 .about-us__br {
   border: 1px solid #272727;
   height: 50rem;
@@ -542,6 +553,11 @@ body {
   width: 50%;
   padding: 10rem;
   color: #272727;
+}
+@media only screen and (max-width: 62.5em) {
+  .about-us__info {
+    padding: 5rem;
+  }
 }
 .about-us__header {
   font-size: 4rem;
@@ -559,15 +575,20 @@ body {
 }
 
 .offer__container {
-  margin: 0 17rem;
+  margin: 0 8rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 15rem;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-gap: 10rem;
   justify-items: center;
 }
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 1300px) {
   .offer__container {
-    margin: 0 13rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .offer__container {
+    grid-gap: 12rem;
   }
 }
 .offer__header {
@@ -642,32 +663,33 @@ body {
   margin: 7rem 0;
 }
 .cooperation__container {
-  margin: 0 15rem;
+  margin: 0 8rem;
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   justify-content: center;
-  grid-column-gap: 5rem;
+  grid-column-gap: 7rem;
   grid-row-gap: 5rem;
   justify-items: center;
 }
-@media only screen and (max-width: 81.5625em) {
+@media only screen and (max-width: 1350px) {
   .cooperation__container {
-    margin: 0 10rem;
-    grid-column-gap: 8rem;
-  }
-}
-@media only screen and (max-width: 1305px) {
-  .cooperation__container {
-    margin: 0 20rem;
-    grid-column-gap: 13rem;
-    grid-row-gap: 10rem;
+    margin: 0 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   }
 }
 @media only screen and (max-width: 75em) {
   .cooperation__container {
-    grid-gap: 18rem;
-    margin: 0 30rem;
+    margin: 0 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 10rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .cooperation__container {
+    margin: 0 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 8rem;
   }
 }
 .cooperation__header {

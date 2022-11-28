@@ -2,20 +2,18 @@
   // background-color: $color-grey-light-1;
 
   &__container {
-    margin: 0 17rem;
+    margin: 0 8rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-gap: 10rem;
     justify-items: center;
 
-    @media only screen and (max-width: $bp-large) {
-      margin: 0 13rem;
+    @media only screen and (max-width: 1300px) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
-    // @media only screen and (max-width: $bp-largest) {
-    //   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    //   // grid-gap: 10rem;
-    //   // margin: 0 23rem;
-    // }
+    @media only screen and (max-width: 1300px) {
+      grid-gap: 12rem;
+    }
   }
 
   &__header {
