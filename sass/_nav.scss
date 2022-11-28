@@ -3,9 +3,10 @@
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   z-index: 1000;
   transition: all 2s;
+
+  // media query nav
 
   &__background-gradient {
     background-image: linear-gradient(
@@ -28,63 +29,144 @@
       hsl(43deg 65% 25%) 100%
     );
   }
-  &__logo {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3rem;
-    overflow: hidden;
-    // margin-left: 8%;
+
+  &__toggle {
+    display: none;
+
+    svg {
+      width: 2.5rem;
+      fill: #fff;
+    }
+
+    .close {
+      display: none;
+    }
+  }
+
+  &__checkbox {
+    display: none;
   }
 
   &__img-logo {
     height: 9rem;
   }
 
-  &__list {
-    list-style: none;
+  &__menu {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-right: 3rem;
-    cursor: pointer;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem;
 
-    &__anch {
-      position: relative;
+    li {
+      display: flex;
+      justify-content: end;
+      padding: 2rem 3rem;
+      margin-right: 3rem;
+      cursor: pointer;
+
+      &:first-child {
+        margin-right: auto;
+      }
+    }
+
+    svg {
+      width: 1.5rem;
+      fill: #fff;
+    }
+  }
+  &__a {
+    position: relative;
+    display: block;
+  }
+
+  &__a:link,
+  &__a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s;
+  }
+
+  &__a:hover,
+  &__a:active {
+    // color: $color-primary;
+    transform: translateY(-2px);
+  }
+  &__a:after {
+    background: #fff;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    bottom: -0px;
+    left: 0;
+    right: 0;
+    transition: all 300ms;
+    width: 0%;
+  }
+  &__a:hover:after {
+    width: 100%;
+  }
+}
+
+// Toggle the hamburger menu in mobile view
+
+// Mobile view
+
+@media only screen and (max-width: $bp-medium) {
+  .nav {
+    &__toggle {
       display: block;
-    }
-
-    &__anch:link,
-    &__anch:visited {
-      text-decoration: none;
-      color: #fff;
-      transition: all 0.2s;
-    }
-
-    &__anch:hover,
-    &__anch:active {
-      // color: $color-primary;
-      transform: translateY(-2px);
-    }
-    &__anch:after {
-      background: #fff;
-      content: '';
-      display: inline-block;
-      height: 2px;
-      margin: auto;
       position: absolute;
-      bottom: -0px;
-      left: 0;
+      cursor: pointer;
+      margin: 0rem 5rem;
       right: 0;
-      transition: all 300ms;
-      width: 0%;
+
+      svg {
+        width: 2.5rem;
+        fill: #fff;
+      }
+
+      .close {
+        display: none;
+      }
     }
-    &__anch:hover:after {
+
+    &__menu {
       width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      gap: 2rem;
+      // align-items: center;
+      // margin: 1rem;
+
+      li {
+        display: none;
+
+        &:first-child {
+          display: block;
+          margin-right: auto;
+        }
+      }
     }
   }
 
-  &__item {
-    padding: 2rem 3rem;
+  #nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+  }
+
+  //Change from menu to close icon on tap
+  #nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+  }
+
+  #nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
   }
 }

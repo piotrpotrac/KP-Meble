@@ -61,7 +61,7 @@
 
           & a:hover,
           & a:active {
-            color: rgb(170, 170, 170);
+            color: $color-grey-light-2;
           }
         }
       }
@@ -73,7 +73,7 @@
           margin: auto 0;
           h1 {
             font-weight: 400;
-            font-size: 3.2rem;
+            font-size: 3rem;
           }
           h3 {
             font-weight: 300;
@@ -82,7 +82,7 @@
         }
 
         .logo {
-          height: 14rem;
+          height: 22rem;
           margin-right: 2rem;
         }
       }

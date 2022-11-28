@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80rem;
-  height: 100vh;
+  // height: 100vh;
   background-color: #f3f3f3;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
@@ -80,10 +80,10 @@
 .form {
   > input {
     width: 100%;
-    background: #eee;
+    background: $color-grey-light-3;
     font-size: 1.7rem;
     padding: 1rem 1.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid $color-grey-light-border;
     border-radius: 0.5rem;
 
     &:focus {
@@ -107,6 +107,6 @@
   &__name:user-invalid,
   &__email:user-invalid,
   &__tel:user-invalid {
-    background: rgb(255, 168, 168);
+    background: $color-invalid;
   }
 }
