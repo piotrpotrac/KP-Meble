@@ -20,13 +20,13 @@
     hsl(43deg 65% 25%) 100%
   );
   color: #fff;
-  // align-items: center;
 
   &__row {
     display: block;
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
+    margin-bottom: 1rem;
 
     .footer__column {
       display: grid;
@@ -35,6 +35,11 @@
       align-items: center;
       font-size: 1.4rem;
       text-align: left;
+      @media only screen and (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
 
       & .column__items {
         display: block;
@@ -68,22 +73,41 @@
 
       .company {
         display: flex;
+        @media only screen and (max-width: $bp-large) {
+          margin-bottom: 0;
+        }
 
         .slogan {
           margin: auto 0;
           h1 {
             font-weight: 400;
             font-size: 3rem;
+            @media only screen and (max-width: $bp-large) {
+              font-size: 2.4rem;
+            }
           }
           h3 {
             font-weight: 300;
             font-size: 1.6rem;
+
+            @media only screen and (max-width: $bp-large) {
+              font-size: 1.2rem;
+            }
           }
         }
 
         .logo {
           height: 22rem;
           margin-right: 2rem;
+
+          @media only screen and (max-width: $bp-large) {
+            height: 15rem;
+            margin-right: 2rem;
+          }
+          @media only screen and (max-width: $bp-small) {
+            height: 10rem;
+            margin-right: 1rem;
+          }
         }
       }
 
@@ -91,6 +115,9 @@
         width: 10rem;
         margin: 0 auto;
         text-align: center;
+        @media only screen and (max-width: $bp-small) {
+          margin-bottom: 2rem;
+        }
       }
     }
   }

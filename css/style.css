@@ -41,6 +41,11 @@ strong {
   transform: translateY(8rem);
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 .container {
   display: grid;
   grid-template-rows: repeat(auto-fill, 1fr);
@@ -83,13 +88,37 @@ body {
   font-weight: 400;
   animation: moveInLeft ease-in 1.5s;
 }
+@media only screen and (max-width: 62.5em) {
+  .header__title__sub {
+    font-size: 2rem;
+  }
+}
 
 .offer__header,
+.gallery__header,
 .cooperation__header {
+  width: 100%;
+  text-align: center;
   font-size: 4rem;
   font-weight: 300;
+  color: #272727;
+}
+@media only screen and (max-width: 62.5em) {
+  .offer__header,
+.gallery__header,
+.cooperation__header {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .offer__header,
+.gallery__header,
+.cooperation__header {
+    font-size: 2.4rem;
+  }
 }
 .offer__title,
+.gallery__title,
 .cooperation__title {
   font-size: 1.8rem;
   font-weight: 600;
@@ -162,8 +191,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,9 +296,9 @@ body {
   width: 80vw;
   height: 44.4444444444vw;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 50em) {
   .swiper {
-    width: 95vw;
+    width: 90vw;
     height: 52.7777777778vw;
   }
 }
@@ -295,12 +324,29 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80rem;
+  width: 60%;
+  font-size: 10px;
   background-color: #f3f3f3;
-  padding: 5rem 6rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  padding: 5em 6em;
+  box-shadow: 0 4em 6em rgba(0, 0, 0, 0.3);
   z-index: 1100;
   transition: all 0.5s;
+}
+@media only screen and (max-width: 50em) {
+  .modal {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .modal {
+    font-size: 6px;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .modal {
+    padding: 2em 2.5em;
+  }
 }
 
 .overlay {
@@ -316,47 +362,57 @@ body {
 }
 
 .modal__header {
-  font-size: 3.25rem;
-  margin-bottom: 4rem;
+  font-size: 3.25em;
+  margin-bottom: 2em;
   line-height: 1.5;
   font-weight: 500;
 }
 
 .modal__form {
-  margin: 0 2.5rem;
+  margin: 0 2.5em;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  gap: 2.5rem;
-  column-gap: 1.5rem;
+  gap: 2.5em;
+  column-gap: 1.5em;
+}
+@media only screen and (max-width: 62.5em) {
+  .modal__form {
+    margin: 0 1em;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .modal__form {
+    gap: 1.5em;
+  }
 }
 .modal__form__text-lbl {
   align-self: start;
 }
 .modal__form__textarea {
-  height: 18rem;
+  height: 10em;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
 .modal__form label {
-  font-size: 1.7rem;
+  font-size: 1.7em;
   font-weight: 500;
 }
 
 .modal__form button {
   grid-column: 1/span 2;
   justify-self: center;
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .btn--close-modal {
   font-family: inherit;
   color: inherit;
   position: absolute;
-  top: 0.5rem;
-  right: 2rem;
-  font-size: 4rem;
+  top: 0.5em;
+  right: 2em;
+  font-size: 4em;
   cursor: pointer;
   border: none;
   background: none;
@@ -370,10 +426,10 @@ body {
 .form > input {
   width: 100%;
   background: #eee;
-  font-size: 1.7rem;
-  padding: 1rem 1.5rem;
+  font-size: 1.7em;
+  padding: 1em 1.5em;
   border: 1px solid #ddd;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
 }
 .form > input:focus {
   outline: 0;
@@ -425,6 +481,11 @@ body {
   align-items: center;
   gap: 2rem;
   margin: 1rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .nav__menu {
+    gap: 1.2rem;
+  }
 }
 .nav__menu li {
   display: flex;
@@ -500,7 +561,9 @@ body {
     margin-right: auto;
   }
   #nav__checkbox:checked ~ ul.nav__menu li {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   #nav__checkbox:checked ~ label.nav__toggle .close {
     display: block;
@@ -519,7 +582,7 @@ body {
 }
 .header__container {
   margin: 0 0 4rem 8rem;
-  max-width: 60rem;
+  width: 55%;
   border-radius: 10px;
   padding: 1.2rem 2rem;
 }
@@ -531,6 +594,11 @@ body {
 .about-us {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 50em) {
+  .about-us {
+    flex-direction: column;
+  }
 }
 .about-us__img {
   width: 50%;
@@ -573,6 +641,25 @@ body {
   margin: 0 auto;
   margin-top: 5rem;
 }
+@media only screen and (max-width: 50em) {
+  .about-us {
+    flex-direction: column-reverse;
+  }
+  .about-us__img {
+    width: 80%;
+    opacity: 0.9;
+  }
+  .about-us__img img {
+    padding: 2rem;
+  }
+  .about-us__br {
+    display: none;
+  }
+  .about-us__info {
+    width: 80%;
+    padding: 2rem;
+  }
+}
 
 .offer__container {
   margin: 0 8rem;
@@ -584,17 +671,10 @@ body {
 @media only screen and (max-width: 1300px) {
   .offer__container {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .offer__container {
     grid-gap: 12rem;
   }
 }
 .offer__header {
-  width: 100%;
-  text-align: center;
-  color: #272727;
   margin-bottom: 6rem;
 }
 .offer__card {
@@ -649,11 +729,7 @@ body {
 }
 
 .gallery__header {
-  font-family: inherit;
-  font-size: 4rem;
   margin-top: 2rem;
-  width: 100%;
-  text-align: center;
 }
 .gallery__swiper {
   margin-top: 3rem;
@@ -692,10 +768,14 @@ body {
     grid-column-gap: 8rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .cooperation__container {
+    margin: 0 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-column-gap: 5rem;
+  }
+}
 .cooperation__header {
-  width: 100%;
-  text-align: center;
-  color: #272727;
   margin-bottom: 6rem;
 }
 .cooperation__card {
@@ -732,6 +812,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 .footer__row .footer__column {
   display: grid;
@@ -740,6 +821,13 @@ body {
   align-items: center;
   font-size: 1.4rem;
   text-align: left;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__row .footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 .footer__row .footer__column .column__items {
   display: block;
@@ -766,6 +854,11 @@ body {
 .footer__row .footer__column .company {
   display: flex;
 }
+@media only screen and (max-width: 62.5em) {
+  .footer__row .footer__column .company {
+    margin-bottom: 0;
+  }
+}
 .footer__row .footer__column .company .slogan {
   margin: auto 0;
 }
@@ -773,18 +866,45 @@ body {
   font-weight: 400;
   font-size: 3rem;
 }
+@media only screen and (max-width: 62.5em) {
+  .footer__row .footer__column .company .slogan h1 {
+    font-size: 2.4rem;
+  }
+}
 .footer__row .footer__column .company .slogan h3 {
   font-weight: 300;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .footer__row .footer__column .company .slogan h3 {
+    font-size: 1.2rem;
+  }
 }
 .footer__row .footer__column .company .logo {
   height: 22rem;
   margin-right: 2rem;
 }
+@media only screen and (max-width: 62.5em) {
+  .footer__row .footer__column .company .logo {
+    height: 15rem;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__row .footer__column .company .logo {
+    height: 10rem;
+    margin-right: 1rem;
+  }
+}
 .footer__row .footer__column button {
   width: 10rem;
   margin: 0 auto;
   text-align: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__row .footer__column button {
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

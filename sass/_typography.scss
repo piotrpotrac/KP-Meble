@@ -11,30 +11,39 @@ body {
 }
 
 .header__title {
-  // text-transform: uppercase;
-  // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-family: Cambria, Cochin, Georgia, Times, serif;
-  // font-size: 10rem;
-
   color: rgba(10, 10, 10, 0.95);
   color: #fff;
-  // font-weight: 200;
   line-height: 1.2;
   letter-spacing: -1px;
-  // animation: moveInLeft ease-in 1.5s;
   &__sub {
     font-size: 3.2rem;
     letter-spacing: 0.5rem;
     font-weight: 400;
     animation: moveInLeft ease-in 1.5s;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2rem;
+    }
   }
 }
 
 .offer,
+.gallery,
 .cooperation {
   &__header {
+    width: 100%;
+    text-align: center;
     font-size: 4rem;
     font-weight: 300;
+    color: $color-grey-dark-3;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 3.2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.4rem;
+    }
   }
 
   &__title {

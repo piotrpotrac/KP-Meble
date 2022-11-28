@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+
   &__img {
     width: 50%;
     & img {
@@ -44,5 +48,26 @@
     display: block;
     margin: 0 auto;
     margin-top: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+
+    &__img {
+      width: 80%;
+      opacity: 0.9;
+
+      & img {
+        padding: 2rem;
+      }
+    }
+    &__br {
+      display: none;
+    }
+
+    &__info {
+      width: 80%;
+      padding: 2rem;
+    }
   }
 }

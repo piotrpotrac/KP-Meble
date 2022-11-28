@@ -45,8 +45,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,8 +166,8 @@
 .swiper {
   width: 80vw;
   height: calc(5 / 9 * 80vw);
-  @media only screen and (max-width: $bp-small) {
-    width: 95vw;
+  @media only screen and (max-width: $bp-medium) {
+    width: 90vw;
     height: calc(5 / 9 * 95vw);
   }
 }

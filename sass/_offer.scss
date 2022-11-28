@@ -10,16 +10,15 @@
 
     @media only screen and (max-width: 1300px) {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    }
-    @media only screen and (max-width: 1300px) {
       grid-gap: 12rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      // grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+      // margin: 0 2rem;
     }
   }
 
   &__header {
-    width: 100%;
-    text-align: center;
-    color: $color-grey-dark-3;
     margin-bottom: 6rem;
   }
 
