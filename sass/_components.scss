@@ -45,8 +45,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@
   }
 
   & .ldio-6gjnna25q6t div {
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 }
 
@@ -186,5 +186,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 100%;
+  width: 100%;
 }

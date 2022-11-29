@@ -1,18 +1,11 @@
 // COLOR VARIABLES
 
-$color-primary-x: #efc17b;
-$color-primary-1: #f5b85b;
-$color-primary-2: #a86f1a;
-$color-primary-3: #885a16;
-$color-primary-4: #3b2402;
-
 $color-primary: #c69963;
 $color-primary-dark: #b28451;
 
 $color-buton-bg: #b69d50;
 $color-buton-hover: #8f7b3f;
 
-$color-secondary: #101d2c;
 $color-shadow: rgba(47, 47, 47, 1);
 $color-invalid: rgb(255, 168, 168);
 
@@ -21,8 +14,6 @@ $color-grey-light-2: #aaa;
 $color-grey-light-3: #eee;
 $color-grey-light-border: #ddd;
 
-$color-grey-dark-1: #54483a;
-$color-grey-dark-2: #6d5d4b;
 $color-grey-dark-3: #272727;
 
 //RESPONSIVE BREAKPOINTS
@@ -47,7 +38,7 @@ html {
   font-size: 62.5%; // 10px
 
   @media only screen and (max-width: $bp-largest) {
-    font-size: 50%; // 10px
+    font-size: 50%; // 8px
   }
 }
 body {
@@ -58,9 +49,7 @@ strong {
   font-weight: normal;
 }
 .container {
-  // width: 60%;
   color: black;
-  // margin: 1rem;
 }
 
 .section {

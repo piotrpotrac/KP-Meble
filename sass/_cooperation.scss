@@ -26,7 +26,6 @@
     }
     @media only screen and (max-width: $bp-small) {
       margin: 0 5rem;
-      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
       grid-column-gap: 5rem;
     }
   }
@@ -37,7 +36,11 @@
 
   &__card {
     height: 40rem;
-    width: 25rem;
+    width: 28rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 25rem;
+    }
   }
 
   &__item {

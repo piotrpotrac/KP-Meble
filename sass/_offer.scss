@@ -13,8 +13,7 @@
       grid-gap: 12rem;
     }
     @media only screen and (max-width: $bp-small) {
-      // grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-      // margin: 0 2rem;
+      margin: 0 2rem;
     }
   }
 
@@ -31,6 +30,10 @@
     @media only screen and (max-width: $bp-largest) {
       height: 39rem;
       width: 31.25rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      height: 34rem;
+      width: 27rem;
     }
   }
   &__item {

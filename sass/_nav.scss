@@ -1,7 +1,6 @@
 .nav {
   position: sticky;
   top: 0;
-  width: 100%;
   display: flex;
   z-index: 1000;
   transition: all 2s;
@@ -48,7 +47,8 @@
   }
 
   &__img-logo {
-    height: 9rem;
+    height: 8rem;
+    margin-left: 5rem;
   }
 
   &__menu {
@@ -58,8 +58,9 @@
     justify-content: end;
     list-style: none;
     align-items: center;
-    gap: 2rem;
-    margin: 1rem;
+    justify-content: center;
+    gap: 1rem;
+    // margin: 1rem;
     @media only screen and (max-width: $bp-large) {
       gap: 1.2rem;
     }
@@ -67,11 +68,12 @@
     li {
       display: flex;
       justify-content: end;
-      padding: 2rem 3rem;
+      padding: 2rem 2rem;
       margin-right: 3rem;
       cursor: pointer;
 
       &:first-child {
+        padding: 0;
         margin-right: auto;
       }
     }
@@ -122,15 +124,42 @@
 
 @media only screen and (max-width: $bp-medium) {
   .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: max-content;
+    background-image: linear-gradient(
+      135deg,
+      hsl(45deg 41% 51%) 0%,
+      hsl(45deg 45% 48%) 16%,
+      hsl(44deg 49% 45%) 23%,
+      hsl(43deg 53% 42%) 29%,
+      hsl(43deg 57% 38%) 34%,
+      hsl(43deg 61% 35%) 39%,
+      hsl(43deg 63% 34%) 43%,
+      hsl(42deg 65% 32%) 48%,
+      hsl(43deg 67% 31%) 52%,
+      hsl(42deg 68% 29%) 57%,
+      hsl(43deg 70% 28%) 61%,
+      hsl(43deg 70% 27%) 66%,
+      hsl(43deg 68% 27%) 71%,
+      hsl(43deg 67% 26%) 77%,
+      hsl(43deg 65% 26%) 84%,
+      hsl(43deg 65% 25%) 100%
+    );
     &__toggle {
       display: block;
       position: absolute;
       cursor: pointer;
-      margin: 0rem 5rem;
-      right: 0;
+      margin-top: 3.5rem;
+      margin-right: 5rem;
+      // margin: auto 3rem;
+      // right: 5%;
+      // top: 100%;
+      width: 4rem;
 
       svg {
-        width: 2.5rem;
+        width: 1.5rem;
         fill: #fff;
       }
 
@@ -141,14 +170,15 @@
 
     &__menu {
       width: 100%;
-      height: auto;
+      height: max-content;
       display: flex;
       flex-direction: column;
-      justify-content: baseline;
-      gap: 2rem;
+      justify-content: center;
+      gap: 1rem;
 
       li {
         display: none;
+        padding: 1rem 2rem;
 
         &:first-child {
           display: block;
@@ -162,6 +192,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &:first-child {
+      display: block;
+    }
   }
 
   //Change from menu to close icon on tap
@@ -170,6 +204,12 @@
   }
 
   #nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+  }
+  // &__item > a:active ~ label.nav__toggle .menu {
+  //   display: none;
+  // }
+  .nav__item a:active ~ label.nav__toggle .menu {
     display: none;
   }
 }
