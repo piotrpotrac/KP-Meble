@@ -3,30 +3,10 @@
   top: 0;
   display: flex;
   z-index: 1000;
-  transition: all 2s;
-
-  // media query nav
+  transition: all 0.5s;
 
   &__background-gradient {
-    background-image: linear-gradient(
-      135deg,
-      hsl(45deg 41% 51%) 0%,
-      hsl(45deg 45% 48%) 16%,
-      hsl(44deg 49% 45%) 23%,
-      hsl(43deg 53% 42%) 29%,
-      hsl(43deg 57% 38%) 34%,
-      hsl(43deg 61% 35%) 39%,
-      hsl(43deg 63% 34%) 43%,
-      hsl(42deg 65% 32%) 48%,
-      hsl(43deg 67% 31%) 52%,
-      hsl(42deg 68% 29%) 57%,
-      hsl(43deg 70% 28%) 61%,
-      hsl(43deg 70% 27%) 66%,
-      hsl(43deg 68% 27%) 71%,
-      hsl(43deg 67% 26%) 77%,
-      hsl(43deg 65% 26%) 84%,
-      hsl(43deg 65% 25%) 100%
-    );
+    background-image: $gradient;
   }
 
   &__toggle {
@@ -58,9 +38,7 @@
     justify-content: end;
     list-style: none;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
-    // margin: 1rem;
     @media only screen and (max-width: $bp-large) {
       gap: 1.2rem;
     }
@@ -122,45 +100,36 @@
 
 // Mobile view
 
-@media only screen and (max-width: $bp-medium) {
+@media only screen and (max-width: $bp-large) {
+  // body {
+  //   position: relative;
+  // }
   .nav {
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     height: max-content;
-    background-image: linear-gradient(
-      135deg,
-      hsl(45deg 41% 51%) 0%,
-      hsl(45deg 45% 48%) 16%,
-      hsl(44deg 49% 45%) 23%,
-      hsl(43deg 53% 42%) 29%,
-      hsl(43deg 57% 38%) 34%,
-      hsl(43deg 61% 35%) 39%,
-      hsl(43deg 63% 34%) 43%,
-      hsl(42deg 65% 32%) 48%,
-      hsl(43deg 67% 31%) 52%,
-      hsl(42deg 68% 29%) 57%,
-      hsl(43deg 70% 28%) 61%,
-      hsl(43deg 70% 27%) 66%,
-      hsl(43deg 68% 27%) 71%,
-      hsl(43deg 67% 26%) 77%,
-      hsl(43deg 65% 26%) 84%,
-      hsl(43deg 65% 25%) 100%
-    );
+    background-image: $gradient;
+
     &__toggle {
       display: block;
       position: absolute;
       cursor: pointer;
       margin-top: 3.5rem;
       margin-right: 5rem;
-      // margin: auto 3rem;
-      // right: 5%;
-      // top: 100%;
       width: 4rem;
 
       svg {
         width: 1.5rem;
         fill: #fff;
+        @media only screen and (orientation: landscape) {
+          width: 2rem;
+          fill: black;
+        }
       }
 
       .close {
@@ -175,10 +144,18 @@
       flex-direction: column;
       justify-content: center;
       gap: 1rem;
+      color: inherit;
+
+      @media only screen and (orientation: landscape) {
+        background: transparent;
+      }
 
       li {
         display: none;
         padding: 1rem 2rem;
+        @media only screen and (orientation: landscape) {
+          color: black;
+        }
 
         &:first-child {
           display: block;
@@ -188,6 +165,7 @@
     }
   }
 
+  //conditions
   #nav__checkbox:checked ~ ul.nav__menu li {
     display: flex;
     flex-direction: column;
@@ -201,15 +179,23 @@
   //Change from menu to close icon on tap
   #nav__checkbox:checked ~ label.nav__toggle .close {
     display: block;
+    fill: #fff;
   }
 
   #nav__checkbox:checked ~ label.nav__toggle .menu {
     display: none;
   }
-  // &__item > a:active ~ label.nav__toggle .menu {
-  //   display: none;
-  // }
-  .nav__item a:active ~ label.nav__toggle .menu {
+
+  #nav__checkbox:checked ~ .nav__menu li:first-child.logo__hide {
+    display: block;
+  }
+
+  #nav__checkbox:checked ~ .nav__menu {
+    background-image: $gradient;
+  }
+}
+@media only screen and (max-width: $bp-large) and (orientation: landscape) {
+  .nav__menu li:first-child.logo__hide {
     display: none;
   }
 }

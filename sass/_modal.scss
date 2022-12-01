@@ -18,6 +18,10 @@
   @media only screen and (max-width: $bp-medium) {
     font-size: 8px;
   }
+  @media only screen and (max-width: $bp-large) and (orientation: landscape) {
+    font-size: 6px;
+    width: 80%;
+  }
   @media only screen and (max-width: $bp-small) {
     font-size: 6px;
     width: 80%;

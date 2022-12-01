@@ -16,6 +16,25 @@ $color-grey-light-border: #ddd;
 
 $color-grey-dark-3: #272727;
 
+$gradient: linear-gradient(
+  135deg,
+  hsl(45deg 41% 51%) 0%,
+  hsl(45deg 45% 48%) 16%,
+  hsl(44deg 49% 45%) 23%,
+  hsl(43deg 53% 42%) 29%,
+  hsl(43deg 57% 38%) 34%,
+  hsl(43deg 61% 35%) 39%,
+  hsl(43deg 63% 34%) 43%,
+  hsl(42deg 65% 32%) 48%,
+  hsl(43deg 67% 31%) 52%,
+  hsl(42deg 68% 29%) 57%,
+  hsl(43deg 70% 28%) 61%,
+  hsl(43deg 70% 27%) 66%,
+  hsl(43deg 68% 27%) 71%,
+  hsl(43deg 67% 26%) 77%,
+  hsl(43deg 65% 26%) 84%,
+  hsl(43deg 65% 25%) 100%
+);
 //RESPONSIVE BREAKPOINTS
 
 $bp-largest: 75em; //1200px

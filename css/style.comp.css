@@ -48,8 +48,6 @@ a {
 
 .container {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
   position: relative;
 }
 
@@ -64,6 +62,16 @@ a {
   height: 100vh;
   width: 100vw;
   transform: translateY(-6rem);
+}
+@media only screen and (max-width: 50em) {
+  .header {
+    height: calc(100vh - 6rem);
+  }
+}
+@media only screen and (max-width: 50em) and (orientation: landscape) {
+  .header {
+    height: 120vh;
+  }
 }
 
 .about-us {
@@ -184,6 +192,7 @@ body {
   background: #b69d50;
   padding: 0 15px;
   color: #fff;
+  letter-spacing: 1px;
 }
 .btn__brown:hover {
   text-decoration: underline;
@@ -363,6 +372,12 @@ body {
     font-size: 8px;
   }
 }
+@media only screen and (max-width: 62.5em) and (orientation: landscape) {
+  .modal {
+    font-size: 6px;
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .modal {
     font-size: 6px;
@@ -481,7 +496,7 @@ body {
   top: 0;
   display: flex;
   z-index: 1000;
-  transition: all 2s;
+  transition: all 0.5s;
 }
 .nav__background-gradient {
   background-image: linear-gradient(135deg, hsl(45deg, 41%, 51%) 0%, hsl(45deg, 45%, 48%) 16%, hsl(44deg, 49%, 45%) 23%, hsl(43deg, 53%, 42%) 29%, hsl(43deg, 57%, 38%) 34%, hsl(43deg, 61%, 35%) 39%, hsl(43deg, 63%, 34%) 43%, hsl(42deg, 65%, 32%) 48%, hsl(43deg, 67%, 31%) 52%, hsl(42deg, 68%, 29%) 57%, hsl(43deg, 70%, 28%) 61%, hsl(43deg, 70%, 27%) 66%, hsl(43deg, 68%, 27%) 71%, hsl(43deg, 67%, 26%) 77%, hsl(43deg, 65%, 26%) 84%, hsl(43deg, 65%, 25%) 100%);
@@ -510,7 +525,6 @@ body {
   justify-content: end;
   list-style: none;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 @media only screen and (max-width: 62.5em) {
@@ -562,7 +576,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 62.5em) {
   .nav {
     display: flex;
     justify-content: flex-end;
@@ -582,9 +596,19 @@ body {
     width: 1.5rem;
     fill: #fff;
   }
+}
+@media only screen and (max-width: 62.5em) and (orientation: landscape) {
+  .nav__toggle svg {
+    width: 2rem;
+    fill: black;
+  }
+}
+@media only screen and (max-width: 62.5em) {
   .nav__toggle .close {
     display: none;
   }
+}
+@media only screen and (max-width: 62.5em) {
   .nav__menu {
     width: 100%;
     height: max-content;
@@ -592,15 +616,32 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    color: inherit;
   }
+}
+@media only screen and (max-width: 62.5em) and (orientation: landscape) {
+  .nav__menu {
+    background: transparent;
+  }
+}
+@media only screen and (max-width: 62.5em) {
   .nav__menu li {
     display: none;
     padding: 1rem 2rem;
   }
+}
+@media only screen and (max-width: 62.5em) and (orientation: landscape) {
+  .nav__menu li {
+    color: black;
+  }
+}
+@media only screen and (max-width: 62.5em) {
   .nav__menu li:first-child {
     display: block;
     margin-right: auto;
   }
+}
+@media only screen and (max-width: 62.5em) {
   #nav__checkbox:checked ~ ul.nav__menu li {
     display: flex;
     flex-direction: column;
@@ -609,13 +650,30 @@ body {
   #nav__checkbox:checked ~ ul.nav__menu li:first-child {
     display: block;
   }
+}
+@media only screen and (max-width: 62.5em) {
   #nav__checkbox:checked ~ label.nav__toggle .close {
     display: block;
+    fill: #fff;
   }
+}
+@media only screen and (max-width: 62.5em) {
   #nav__checkbox:checked ~ label.nav__toggle .menu {
     display: none;
   }
-  .nav__item a:active ~ label.nav__toggle .menu {
+}
+@media only screen and (max-width: 62.5em) {
+  #nav__checkbox:checked ~ .nav__menu li:first-child.logo__hide {
+    display: block;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  #nav__checkbox:checked ~ .nav__menu {
+    background-image: linear-gradient(135deg, hsl(45deg, 41%, 51%) 0%, hsl(45deg, 45%, 48%) 16%, hsl(44deg, 49%, 45%) 23%, hsl(43deg, 53%, 42%) 29%, hsl(43deg, 57%, 38%) 34%, hsl(43deg, 61%, 35%) 39%, hsl(43deg, 63%, 34%) 43%, hsl(42deg, 65%, 32%) 48%, hsl(43deg, 67%, 31%) 52%, hsl(42deg, 68%, 29%) 57%, hsl(43deg, 70%, 28%) 61%, hsl(43deg, 70%, 27%) 66%, hsl(43deg, 68%, 27%) 71%, hsl(43deg, 67%, 26%) 77%, hsl(43deg, 65%, 26%) 84%, hsl(43deg, 65%, 25%) 100%);
+  }
+}
+@media only screen and (max-width: 62.5em) and (orientation: landscape) {
+  .nav__menu li:first-child.logo__hide {
     display: none;
   }
 }
