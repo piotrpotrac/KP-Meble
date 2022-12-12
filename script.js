@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
 });
 
 //Hide nav bg
-
 const sectionNav = document.querySelector('.nav');
 const hideLogo = document.querySelector('#logo__hide');
 
@@ -30,6 +29,12 @@ window.addEventListener(`scroll`, function (e) {
     hideLogo.classList.add('logo__hide');
   }
 });
+// Handling hiden navmenu after click
+
+const checkbox = document.querySelector('#nav__checkbox');
+const anch = document.querySelector('.nav__menu');
+
+anch.addEventListener('click', () => (checkbox.checked = false));
 
 // Swiper gallery
 
