@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.nav__item {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.header__title {
+  // font-family: Cambria, Cochin, Georgia, Times, serif;
+  color: rgba(10, 10, 10, 0.95);
+  color: #fff;
+  line-height: 1.2;
+  // letter-spacing: 1px;
+  &__sub {
+    font-size: 3.2rem;
+    // letter-spacing: 0.5rem;
+    font-weight: 400;
+    animation: moveInLeft ease-in 1.5s;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.offer,
+.gallery,
+.cooperation {
+  &__header {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color-grey-dark-3;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 3.2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

@@ -1,7 +1,5 @@
-# KP-Meble
+Website design for the company KP Meble, which creates custom-made furniture.
 
-Projekt strony internetowej dla firmy KP Meble zajmującą się tworzeniem mebli i zabudów meblowych pod wymiar.
-
-Strona została stworzona przy pomocy HTML, preprocesora Sass oraz JavaScript. Wykonana w metodyce SPA.
-W tym projekcie wykorzystałem takie biblioteki JS jak Swiper (odpowiada za galerię zdjęć) oraz SmtpJS (odpowiedzialny za wysyłanie wiadomości przez użytownika na zadeklarowany adres email). Zastosowałem także animację podczas ładowania strony oraz przewijania treści (sekcji).
-Strona została zaprojektowana również z maślą o urządzeniach mobilnych zgodnie z metodologią RWD. 
+The website was created using HTML, Sass preprocessor and JavaScript. Made in the SPA methodology.
+In this project I used such JS libraries as Swiper (responsible for the photo gallery) and SmtpJS (responsible for sending messages by the user to the declared email address). I also used animation when loading the page and scrolling the content (sections).
+The website was also designed for mobile devices in accordance with the RWD methodology.
