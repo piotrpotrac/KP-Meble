@@ -1,2 +1,4 @@
 import './src/sass/main.scss'
-import './src/script.js'
+import { index } from './src/js/index.js'
+
+index()
