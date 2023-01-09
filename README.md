@@ -2,6 +2,8 @@
 
 Website design for the company KP Meble, which creates custom-made furniture.
 
+https://meblekp.pl/
+
 The website was created using HTML, Sass preprocessor and JavaScript. Made in the SPA methodology.
 In this project I used such JS libraries as Swiper (responsible for the photo gallery) and SmtpJS (responsible for sending messages by the user to the declared email address).
 The website was also designed for mobile devices in accordance with the RWD methodology.

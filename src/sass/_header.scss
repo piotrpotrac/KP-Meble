@@ -25,6 +25,13 @@
   }
 
   &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
     margin: 0 0 5rem 9.5rem;
     text-transform: none;
   }
