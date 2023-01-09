@@ -11,20 +11,14 @@ body {
 }
 
 .header__title {
-  // font-family: Cambria, Cochin, Georgia, Times, serif;
   color: rgba(10, 10, 10, 0.95);
   color: #fff;
   line-height: 1.2;
-  // letter-spacing: 1px;
+
   &__sub {
     font-size: 3.2rem;
-    // letter-spacing: 0.5rem;
     font-weight: 400;
     animation: moveInLeft ease-in 1.5s;
-
-    @media only screen and (max-width: $bp-large) {
-      font-size: 2rem;
-    }
   }
 }
 
@@ -41,6 +35,7 @@ body {
     @media only screen and (max-width: $bp-large) {
       font-size: 3.2rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       font-size: 2.4rem;
     }

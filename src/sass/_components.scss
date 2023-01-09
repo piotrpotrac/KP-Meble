@@ -1,9 +1,7 @@
 .btn {
   &__brown {
     border-radius: 4px;
-
     width: auto;
-
     border: 1px solid $color-primary-dark;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -37,8 +35,6 @@
     color: black;
   }
 }
-
-// Loader
 
 .loader {
   position: fixed;
@@ -161,7 +157,6 @@
   }
 }
 
-// Swiper for gallery
 .swiper {
   width: 80vw;
   height: calc(5 / 9 * 80vw);

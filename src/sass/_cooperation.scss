@@ -1,5 +1,6 @@
 .cooperation {
   margin: 7rem 0;
+
   &__container {
     margin: 0 8rem;
     margin-bottom: 5rem;
@@ -14,16 +15,19 @@
       margin: 0 15rem;
       grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     }
+
     @media only screen and (max-width: $bp-largest) {
       margin: 0 20rem;
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       grid-column-gap: 10rem;
     }
+
     @media only screen and (max-width: $bp-large) {
       margin: 0 15rem;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       grid-column-gap: 8rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       margin: 0 5rem;
       grid-column-gap: 5rem;

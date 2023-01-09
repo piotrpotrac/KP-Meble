@@ -1,6 +1,6 @@
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.473)),
-    url(../../src/img/woodwork.jpg);
+    url(/img/woodwork.jpg);
   background-size: cover;
   display: flex;
   justify-content: flex-end;
@@ -12,7 +12,18 @@
     width: 55%;
     border-radius: 10px;
     padding: 1.2rem 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0 0 1rem 3rem;
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 0 1rem 3rem;
+      width: 85%;
+    }
   }
+
   &__btn {
     margin: 0 0 5rem 9.5rem;
     text-transform: none;

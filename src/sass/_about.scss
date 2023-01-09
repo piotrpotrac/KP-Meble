@@ -8,9 +8,11 @@
 
   &__img {
     width: 50%;
+
     & img {
       width: 100%;
       padding: 10rem;
+
       @media only screen and (max-width: $bp-large) {
         padding: 5rem;
       }

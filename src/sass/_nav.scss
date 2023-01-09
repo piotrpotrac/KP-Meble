@@ -3,31 +3,10 @@
   top: 0;
   display: flex;
   z-index: 1000;
-  transition: all 0.5s;
-  background-image: linear-gradient(
-    135deg,
-    rgba(181, 156, 79, 0) 0%,
-    rgba(177, 149, 67, 0) 16%,
-    rgba(171, 141, 59, 0) 23%,
-    rgba(164, 132, 50, 0) 29%,
-    rgba(152, 121, 42, 0) 34%,
-    rgba(144, 113, 35, 0) 39%,
-    rgba(141, 110, 32, 0) 43%,
-    rgba(135, 103, 29, 0) 48%,
-    rgba(132, 102, 26, 0) 52%,
-    rgba(124, 94, 24, 0) 57%,
-    rgba(121, 93, 21, 0) 61%,
-    rgba(117, 90, 21, 0) 66%,
-    rgba(116, 89, 22, 0) 71%,
-    rgba(111, 86, 22, 0) 77%,
-    rgba(109, 85, 23, 0) 84%,
-    rgba(105, 82, 22, 0) 100%
-  );
   transition: all 0.2s;
 
   &__background-gradient {
     background-image: $gradient;
-    // animation: 1s linear 0.5s scroll;
   }
 
   &__toggle {
@@ -55,6 +34,7 @@
     list-style: none;
     align-items: center;
     gap: 1rem;
+
     @media only screen and (max-width: $bp-large) {
       gap: 1.2rem;
     }
@@ -100,6 +80,7 @@
   &__a:active {
     transform: translateY(-2px);
   }
+
   &__a:after {
     background: #fff;
     content: '';
@@ -113,14 +94,11 @@
     transition: all 300ms;
     width: 0%;
   }
+
   &__a:hover:after {
     width: 100%;
   }
 }
-
-// Toggle the hamburger menu in mobile view
-
-// Mobile view
 
 @media only screen and (max-width: $bp-large) {
   .nav {
@@ -134,13 +112,14 @@
       display: block;
       position: absolute;
       cursor: pointer;
-      margin-top: 3.5rem;
       margin-right: 5rem;
+      margin-top: 2.5rem;
       width: 4rem;
 
       svg {
         width: 1.5rem;
         fill: #fff;
+
         @media only screen and (orientation: landscape) {
           width: 2rem;
           fill: black;
@@ -168,6 +147,7 @@
       li {
         display: none;
         padding: 1rem 2rem;
+
         @media only screen and (orientation: landscape) {
           color: black;
         }
@@ -180,7 +160,6 @@
     }
   }
 
-  //conditions
   #nav__checkbox:checked ~ ul.nav__menu li {
     display: flex;
     flex-direction: column;
@@ -191,7 +170,6 @@
     }
   }
 
-  //Change from menu to close icon on tap
   #nav__checkbox:checked ~ label.nav__toggle .close {
     display: block;
     fill: #fff;

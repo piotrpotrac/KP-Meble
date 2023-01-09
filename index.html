@@ -11,7 +11,7 @@
     <meta name="keywords" content="meble, zabudowy kuchenne, szafy" />
     <meta name="author" content="Piotr Potrac" />
     <meta name="copyright" content="Copyright Piotr Potrac" />
-    <link rel="icon" type="image/png" href="./src/img/logo.png" />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
 
     <link
       rel="stylesheet"
@@ -26,435 +26,423 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <!-- 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="stylesheet" href="public/css/style.css" />
+    <script type="module" defer src="/main.js"></script>
     <title>KP Meble na wymiar - Trójmiasto</title>
-    <script defer src="src/script.js"></script>
   </head>
   <body class="container">
-    <div class="loader">
-      <div class="loadingio-spinner-spinner-n0ice66rx4s">
-        <div class="ldio-6gjnna25q6t">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
-
-    <nav class="nav">
-      <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
-      <label for="nav__checkbox" class="nav__toggle">
-        <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
-          <path
-            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-          />
-        </svg>
-        <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-          />
-        </svg>
-      </label>
-      <ul class="nav__menu">
-        <li class="nav__item" id="logo__hide">
-          <a href="#"
-            ><img src="src/img/logo.png" alt="Logo" class="nav__img-logo"
-          /></a>
-        </li>
-        <li class="nav__item">
-          <a href="#about-us" class="nav__a">O nas</a>
-        </li>
-        <li class="nav__item">
-          <a href="#offer" class="nav__a">Oferta</a>
-        </li>
-        <li class="nav__item">
-          <a href="#gallery" class="nav__a">Projekty</a>
-        </li>
-        <li class="nav__item">
-          <a href="#cooperation" class="nav__a">Współpraca</a>
-        </li>
-        <li class="nav__item">
-          <a href="#footer" class="nav__a">Kontakt</a>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="header">
-      <div class="header__container">
-        <h2 class="header__title header__title__sub">
-          Nasza firma zajmuje się produkcją <strong>mebli pod zabudowy</strong>.
-          Oferujemy swoje usługi na terenie całego <strong>Trójmiasta</strong>.
-        </h2>
-      </div>
-      <a href="#about-us"
-        ><button class="header__btn btn__brown">Dowiedz się więcej</button></a
-      >
-    </section>
-
-    <section class="about-us section" id="about-us">
-      <div class="about-us__img">
-        <img src="src/img/kuchnia-o_nas.jpg" alt="Kuchnia-o_nas" />
-      </div>
-      <div class="about-us__br"></div>
-      <div class="about-us__info">
-        <h2 class="about-us__header">O nas</h2>
-        <p class="about-us__par">
-          Nasza firma specjalizuje się w produkcji mebli na zamówienie. Aby
-          sprostać wymaganiom klientów korzystamy z topowych marek płyt
-          meblowych i okuć. Szanujemy Państwa czas, dlatego do każdego zlecenia
-          podchodzimy z pełnym zaangażowaniem, aby jak najszybciej i
-          najdokładniej wykonać Wasze zamówienie.
-        </p>
-        <button class="about-us__btn btn__brown btn--show-modal">
-          Umów się teraz
-        </button>
-      </div>
-    </section>
-
-    <section class="offer section" id="offer">
-      <h3 class="offer__header">Wykonamy dla Ciebie:</h3>
-      <div class="offer__container">
-        <div class="offer__card">
-          <div class="offer__item">
-            <img
-              src="src/img/svg/meble-kuchenne.svg"
-              alt="kuchnia-icon"
-              class="offer__svg"
-            />
-            <span class="offer__title">Meble kuchenne</span>
-          </div>
-          <img
-            src="src/img/offer_section/kuchnia_1.jpeg"
-            alt="Meble kuchenne"
-            class="offer__img"
-          />
-        </div>
-
-        <div class="offer__card">
-          <div class="offer__item">
-            <img
-              src="src/img/svg/meble-lazienkowe.svg"
-              alt="łazienki"
-              class="offer__svg"
-            />
-            <span class="offer__title">Zabudowy łazienkowe</span>
-          </div>
-          <img
-            src="src/img/offer_section/lazienka.jpg"
-            alt="Meble łazienkowe"
-            class="offer__img"
-          />
-        </div>
-
-        <div class="offer__card">
-          <div class="offer__item">
-            <img src="src/img/svg/komody.svg" alt="komoda" class="offer__svg" />
-            <span class="offer__title">Komody</span>
-          </div>
-          <img
-            src="src/img/offer_section/komoda.jpg"
-            alt="Komody"
-            class="offer__img"
-          />
-        </div>
-
-        <div class="offer__card">
-          <div class="offer__item">
-            <img
-              src="src/img/svg/garderoba.svg"
-              alt="Garderoba"
-              class="offer__svg"
-            />
-            <span class="offer__title">Garderoby</span>
-          </div>
-          <img
-            src="src/img/offer_section/garderoba.jpg"
-            alt="Garderoba"
-            class="offer__img"
-          />
-        </div>
-
-        <div class="offer__card">
-          <div class="offer__item">
-            <img src="src/img/svg/regaly.svg" alt="Regał" class="offer__svg" />
-            <span class="offer__title">Regały</span>
-          </div>
-          <img
-            src="src/img/offer_section/regal.jpg"
-            alt="Regał"
-            class="offer__img"
-          />
-        </div>
-
-        <div class="offer__card">
-          <div class="offer__item">
-            <img
-              src="src/img/svg/projekty.svg"
-              alt="Własne projekty"
-              class="offer__svg"
-            />
-            <span class="offer__title">Indywidualne projety</span>
-          </div>
-          <img
-            src="src/img/offer_section/wlasne-projekty.jpg"
-            alt="Projekt"
-            class="offer__img"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery section" id="gallery">
-      <div class="gallery__header">Dotychczasowe realizacje:</div>
-      <div class="gallery__swiper swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/szafa.jpeg"
-              alt="Szafa"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/kuchnia-czarna.jpg"
-              alt="Kuchnia czarna"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/kuchnia__biala.jpeg"
-              alt="Kuchnia biała"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/sypialnia.jpg"
-              alt="Sypialnia"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/sypialnia2.jpg"
-              alt="Sypialnia2"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/sypialnia3.jpeg"
-              alt="Sypialnia3"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/sypialnia4.jpeg"
-              alt="Sypialnia4"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/wneka.jpeg"
-              alt="Szafa wnękowa"
-              class="gallery__img"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="src/img/gallery/łazienka.jpg"
-              alt="Łazienka"
-              class="gallery__img"
-            />
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-
-    <section class="cooperation section" id="cooperation">
-      <h3 class="cooperation__header">Jak wygląda współpraca?</h3>
-      <div class="cooperation__container">
-        <div class="cooperation__card">
-          <div class="cooperation__item">
-            <span class="cooperation__title">Rozmowa telefoniczna</span>
-            <img
-              src="src/img/svg/contact.svg"
-              alt="Kontakt"
-              class="cooperation__svg"
-            />
-          </div>
-          <div class="cooperation__text">
-            Podczas pierwszej rozmowy ustalimy jakim rodzajem projektu są
-            Państwo zainteresowani. Przedstawimy wstępne założenia, rodzaje
-            dostępnych materiałów, pomysły rozwiązań technicznych oraz dostępne
-            terminy. Jeśli wyrażą Państwo chęć współpracy, to umawiamy się na
-            spotkanie.
-          </div>
-        </div>
-
-        <div class="cooperation__card">
-          <div class="cooperation__item">
-            <span class="cooperation__title">Spotkanie i pomiary</span>
-            <img
-              src="src/img/svg/measure4.svg"
-              alt="Pomiary"
-              class="cooperation__svg"
-            />
-          </div>
-          <div class="cooperation__text">
-            Kolejnym etapem jest spotkanie, podczas którego wykonamy pomiary,
-            aby jak najlepiej zagospodarować dostępną przestrzeń. Omówimy także
-            szczegóły Państwa projektu m.in. układ funkcjonalny, rodzaje
-            wykorzystanych materiałów oraz kolorystykę. Po zebraniu wszystkich
-            niezbędnych danych przechodzimy do tworzenia i wyceny projektu.
-          </div>
-        </div>
-
-        <div class="cooperation__card">
-          <div class="cooperation__item">
-            <span class="cooperation__title">Umowa </span>
-            <img
-              src="src/img/svg/contract.svg"
-              alt="Umowa"
-              class="cooperation__svg"
-            />
-          </div>
-          <div class="cooperation__text">
-            Po akceptacji projektu, kosztorysu oraz terminów realizacji
-            przychodzi czas na bardziej oficjalną część. Spotykamy się ponownie
-            w celu podpisania umowy i wpłaty zaliczki.
-          </div>
-        </div>
-
-        <div class="cooperation__card">
-          <div class="cooperation__item">
-            <span class="cooperation__title">Wykonanie i montaż</span>
-            <img
-              src="src/img/svg/work.svg"
-              alt="Garderoba"
-              class="cooperation__svg"
-            />
-          </div>
-          <div class="cooperation__text">
-            W końcu nadchodzi najbardziej wyczekiwana część. Zabieramy się do
-            realiacji. Część ta przebiega w dwóch etapach. Pierwszy z nich to
-            produkcja mebli w naszym zakładzie. Następnie w ustalonym wcześniej
-            terminie wykonujemy montaż mebli na miejscu u klienta.
+    <div id="app">
+      <div class="loader">
+        <div class="loadingio-spinner-spinner-n0ice66rx4s">
+          <div class="ldio-6gjnna25q6t">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="modal hidden">
-        <button class="btn--close-modal">&times;</button>
-        <h2 class="modal__header">Napisz do nas!</h2>
-        <form
-          class="modal__form form"
-          onsubmit="sendEmail(); reset(); return false"
+      <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            />
+          </svg>
+        </label>
+        <ul class="nav__menu">
+          <li class="nav__item" id="logo__hide">
+            <a href="#"
+              ><img src="/img/logo.png" alt="Logo" class="nav__img-logo"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a href="#about-us" class="nav__a">O nas</a>
+          </li>
+          <li class="nav__item">
+            <a href="#offer" class="nav__a">Oferta</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gallery" class="nav__a">Projekty</a>
+          </li>
+          <li class="nav__item">
+            <a href="#cooperation" class="nav__a">Współpraca</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__a">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="header">
+        <div class="header__container">
+          <h2 class="header__title header__title__sub">
+            Nasza firma zajmuje się produkcją
+            <strong>mebli pod zabudowy</strong>. Oferujemy swoje usługi na
+            terenie całego <strong>Trójmiasta</strong>.
+          </h2>
+        </div>
+        <a href="#about-us"
+          ><button class="header__btn btn__brown">Dowiedz się więcej</button></a
         >
-          <label>Imię:</label>
-          <input
-            type="text"
-            class="form__surname"
-            pattern="[a-zA-Ząłóżźćęśń]+"
-            required
-          />
-          <label>Nazwisko:</label>
-          <input
-            type="text"
-            class="form__name"
-            pattern="[a-zA-Ząłóżźćęśń-]+"
-            required
-          />
-          <label>Telefon:</label>
-          <input type="tel" class="form__tel" pattern="[0-9]{9}" required />
-          <label>Email:</label>
-          <input
-            type="email"
-            class="form__email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{2,5}$"
-            required
-          />
-          <label for="msg" class="modal__form__text-lbl">Wiadomość:</label>
-          <textarea
-            id="msg"
-            name="msg"
-            cols="20"
-            rows="8"
-            class="modal__form__textarea"
-            placeholder=" Treść wiadomości:"
-            style="font-size: 1.2em; resize: none"
-            required
-          ></textarea>
-          <button type="submit" class="btn btn__brown">Wyślij &rarr;</button>
-        </form>
-      </div>
-      <div class="overlay hidden"></div>
-    </section>
-
-    <footer id="footer" class="footer">
-      <div class="footer__row">
-        <div class="footer__column">
-          <div class="column__items company">
-            <img src="./src/img/logo.png" alt="MebleKP-logo" class="logo" />
-            <div class="slogan">
-              <h1 class="company__name">KP Meble</h1>
-              <h3>Twoje meble na wymiar</h3>
-            </div>
-          </div>
-          <div class="column__items">
-            <div class="adr__cont">
-              <div class="column__item adres">
-                <img src="src/img/svg/home.svg" alt="Adress" />
-                <div class="adres-data">
-                  <p>84-217 Łebno</p>
-                  <p>ul.Smażyńska 24A</p>
-                </div>
-              </div>
-              <div class="column__item tel">
-                <img src="src/img/svg/call.svg" alt="Telefon" />
-                <a href="tel:+48 509977586"><span>509977586</span></a>
-              </div>
-              <div class="column__item mail">
-                <img src="src/img/svg/mail.svg" alt="Mail" />
-                <a href="mailto:meblekp@gmail.com"> meblekp@gmail.com </a>
-              </div>
-            </div>
-          </div>
+      </section>
+      <section class="about-us section" id="about-us">
+        <div class="about-us__img">
+          <img src="/img/kuchnia-o_nas.jpg" alt="Przykładowe zdjęcie kuchni" />
+        </div>
+        <div class="about-us__br"></div>
+        <div class="about-us__info">
+          <h2 class="about-us__header">O nas</h2>
+          <p class="about-us__par">
+            Nasza firma specjalizuje się w produkcji mebli na zamówienie. Aby
+            sprostać wymaganiom klientów korzystamy z topowych marek płyt
+            meblowych i okuć. Szanujemy Państwa czas, dlatego do każdego
+            zlecenia podchodzimy z pełnym zaangażowaniem, aby jak najszybciej i
+            najdokładniej wykonać Wasze zamówienie.
+          </p>
           <button class="about-us__btn btn__brown btn--show-modal">
-            Kontakt
+            Umów się teraz
           </button>
         </div>
-      </div>
-      <div class="footer__row">
-        Piotr Potrac Copyright © 2022 - All rights reserved
-      </div>
-    </footer>
+      </section>
+      <section class="offer section" id="offer">
+        <h3 class="offer__header">Wykonamy dla Ciebie:</h3>
+        <div class="offer__container">
+          <div class="offer__card">
+            <div class="offer__item">
+              <img
+                src="/img/svg/meble-kuchenne.svg"
+                alt="Ikona kuchni"
+                class="offer__svg"
+              />
+              <span class="offer__title">Meble kuchenne</span>
+            </div>
+            <img
+              src="/img/offer_section/kuchnia_1.jpeg"
+              alt="Meble kuchenne"
+              class="offer__img"
+            />
+          </div>
+          <div class="offer__card">
+            <div class="offer__item">
+              <img
+                src="/img/svg/meble-lazienkowe.svg"
+                alt="Ikona łazienki"
+                class="offer__svg"
+              />
+              <span class="offer__title">Zabudowy łazienkowe</span>
+            </div>
+            <img
+              src="/img/offer_section/lazienka.jpg"
+              alt="Meble łazienkowe"
+              class="offer__img"
+            />
+          </div>
+          <div class="offer__card">
+            <div class="offer__item">
+              <img
+                src="/img/svg/komody.svg"
+                alt="Ikona komody"
+                class="offer__svg"
+              />
+              <span class="offer__title">Komody</span>
+            </div>
+            <img
+              src="/img/offer_section/komoda.jpg"
+              alt="Komoda"
+              class="offer__img"
+            />
+          </div>
+          <div class="offer__card">
+            <div class="offer__item">
+              <img
+                src="/img/svg/garderoba.svg"
+                alt="Ikona garderoby"
+                class="offer__svg"
+              />
+              <span class="offer__title">Garderoby</span>
+            </div>
+            <img
+              src="/img/offer_section/garderoba.jpg"
+              alt="Garderoba"
+              class="offer__img"
+            />
+          </div>
+          <div class="offer__card">
+            <div class="offer__item">
+              <img
+                src="/img/svg/regaly.svg"
+                alt="Ikona regału"
+                class="offer__svg"
+              />
+              <span class="offer__title">Regały</span>
+            </div>
+            <img
+              src="/img/offer_section/regal.jpg"
+              alt="Regał"
+              class="offer__img"
+            />
+          </div>
+          <div class="offer__card">
+            <div class="offer__item">
+              <img
+                src="/img/svg/projekty.svg"
+                alt="Ikona projektu"
+                class="offer__svg"
+              />
+              <span class="offer__title">Indywidualne projety</span>
+            </div>
+            <img
+              src="/img/offer_section/wlasne-projekty.jpg"
+              alt="Własny projekt"
+              class="offer__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="gallery section" id="gallery">
+        <div class="gallery__header">Dotychczasowe realizacje:</div>
+        <div class="gallery__swiper swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/szafa.jpeg"
+                alt="Szafa"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/kuchnia-czarna.jpg"
+                alt="Kuchnia czarna"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/kuchnia__biala.jpeg"
+                alt="Kuchnia biała"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/sypialnia.jpg"
+                alt="Sypialnia"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/sypialnia2.jpg"
+                alt="Sypialnia2"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/sypialnia3.jpeg"
+                alt="Sypialnia3"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/sypialnia4.jpeg"
+                alt="Sypialnia4"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/wneka.jpeg"
+                alt="Szafa wnękowa"
+                class="gallery__img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/img/gallery/łazienka.jpg"
+                alt="Łazienka"
+                class="gallery__img"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="cooperation section" id="cooperation">
+        <h3 class="cooperation__header">Jak wygląda współpraca?</h3>
+        <div class="cooperation__container">
+          <div class="cooperation__card">
+            <div class="cooperation__item">
+              <span class="cooperation__title">Rozmowa telefoniczna</span>
+              <img
+                src="/img/svg/contact.svg"
+                alt="Kontakt ikona"
+                class="cooperation__svg"
+              />
+            </div>
+            <div class="cooperation__text">
+              Podczas pierwszej rozmowy ustalimy jakim rodzajem projektu są
+              Państwo zainteresowani. Przedstawimy wstępne założenia, rodzaje
+              dostępnych materiałów, pomysły rozwiązań technicznych oraz
+              dostępne terminy. Jeśli wyrażą Państwo chęć współpracy, to
+              umawiamy się na spotkanie.
+            </div>
+          </div>
+          <div class="cooperation__card">
+            <div class="cooperation__item">
+              <span class="cooperation__title">Spotkanie i pomiary</span>
+              <img
+                src="/img/svg/measure4.svg"
+                alt="Pomiary ikona"
+                class="cooperation__svg"
+              />
+            </div>
+            <div class="cooperation__text">
+              Kolejnym etapem jest spotkanie, podczas którego wykonamy pomiary,
+              aby jak najlepiej zagospodarować dostępną przestrzeń. Omówimy
+              także szczegóły Państwa projektu m.in. układ funkcjonalny, rodzaje
+              wykorzystanych materiałów oraz kolorystykę. Po zebraniu wszystkich
+              niezbędnych danych przechodzimy do tworzenia i wyceny projektu.
+            </div>
+          </div>
+          <div class="cooperation__card">
+            <div class="cooperation__item">
+              <span class="cooperation__title">Umowa </span>
+              <img
+                src="/img/svg/contract.svg"
+                alt="Umowa ikona"
+                class="cooperation__svg"
+              />
+            </div>
+            <div class="cooperation__text">
+              Po akceptacji projektu, kosztorysu oraz terminów realizacji
+              przychodzi czas na bardziej oficjalną część. Spotykamy się
+              ponownie w celu podpisania umowy i wpłaty zaliczki.
+            </div>
+          </div>
+          <div class="cooperation__card">
+            <div class="cooperation__item">
+              <span class="cooperation__title">Wykonanie i montaż</span>
+              <img
+                src="/img/svg/work.svg"
+                alt="Montaż ikona"
+                class="cooperation__svg"
+              />
+            </div>
+            <div class="cooperation__text">
+              W końcu nadchodzi najbardziej wyczekiwana część. Zabieramy się do
+              realiacji. Część ta przebiega w dwóch etapach. Pierwszy z nich to
+              produkcja mebli w naszym zakładzie. Następnie w ustalonym
+              wcześniej terminie wykonujemy montaż mebli na miejscu u klienta.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="modal hidden">
+          <button class="btn--close-modal">&times;</button>
+          <h2 class="modal__header">Napisz do nas!</h2>
+          <form
+            class="modal__form form"
+            onsubmit="sendEmail(); reset(); return false"
+          >
+            <label>Imię:</label>
+            <input
+              type="text"
+              class="form__surname"
+              pattern="[a-zA-Ząłóżźćęśń]+"
+              required
+            />
+            <label>Nazwisko:</label>
+            <input
+              type="text"
+              class="form__name"
+              pattern="[a-zA-Ząłóżźćęśń-]+"
+              required
+            />
+            <label>Telefon:</label>
+            <input type="tel" class="form__tel" pattern="[0-9]{9}" required />
+            <label>Email:</label>
+            <input
+              type="email"
+              class="form__email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z0-9]{2,5}$"
+              required
+            />
+            <label for="msg" class="modal__form__text-lbl">Wiadomość:</label>
+            <textarea
+              id="msg"
+              name="msg"
+              cols="20"
+              rows="8"
+              class="modal__form__textarea"
+              placeholder=" Treść wiadomości:"
+              style="font-size: 1.2em; resize: none"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn__brown">Wyślij &rarr;</button>
+          </form>
+        </div>
+        <div class="overlay hidden"></div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="footer__row">
+          <div class="footer__column">
+            <div class="column__items company">
+              <img src=".//img/logo.png" alt="MebleKP logo" class="logo" />
+              <div class="slogan">
+                <h1 class="company__name">KP Meble</h1>
+                <h3>Twoje meble na wymiar</h3>
+              </div>
+            </div>
+            <div class="column__items">
+              <div class="adr__cont">
+                <div class="column__item adres">
+                  <img src="/img/svg/home.svg" alt="Adres ikona" />
+                  <div class="adres-data">
+                    <p>84-217 Łebno</p>
+                    <p>ul.Smażyńska 24A</p>
+                  </div>
+                </div>
+                <div class="column__item tel">
+                  <img src="/img/svg/call.svg" alt="Telefon ikona" />
+                  <a href="tel:+48 509977586"><span>509977586</span></a>
+                </div>
+                <div class="column__item mail">
+                  <img src="/img/svg/mail.svg" alt="Mail ikona" />
+                  <a href="mailto:meblekp@gmail.com"> meblekp@gmail.com </a>
+                </div>
+              </div>
+            </div>
+            <button class="about-us__btn btn__brown btn--show-modal">
+              Kontakt
+            </button>
+          </div>
+        </div>
+        <div class="footer__row">
+          Piotr Potrac Copyright © 2022 - All rights reserved
+        </div>
+      </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
