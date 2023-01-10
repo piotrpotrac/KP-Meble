@@ -49,6 +49,27 @@ It correctly bundles App in production mode and optimizes the build for the best
 
 Your app is ready to be deployed!
 
+### `npm run preview`
+
+Locally preview production build
+
+For more ( https://vitejs.dev/guide/ )
+
+### `npm run prettier`
+
+Prettier is an opinionated code formatter with support for:
+-JavaScript (including experimental features)
+-TypeScript
+-CSS, Less, and SCSS
+-HTML
+-JSON
+
+It removes all original styling\* and ensures that all outputted code conforms to a consistent style. (See this blog post).
+
+By defaul this command formate only a src folder.
+
+More info about prettier ( https://prettier.io/ )
+
 ## Learn More
 
 You can learn more in the [Vite App documentation](https://vitejs.dev/).

@@ -1,4 +1,4 @@
 import './src/sass/main.scss'
-import { index } from './src/js/index.js'
+import { init } from './src/js/init.js'
 
-index()
+init()

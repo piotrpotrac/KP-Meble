@@ -6,7 +6,6 @@ export function loadPage() {
 
     loader.addEventListener('transitioned', () => {
       document.body.removeChild(loader)
-      loader.removeEventListener('transitioned')
     })
   })
 }
