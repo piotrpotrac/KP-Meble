@@ -1,8 +1,8 @@
-export function hideBackground() {
+export const hideBackground = () => {
   const sectionNav = document.querySelector('.nav')
   const hidenLogo = document.querySelector('#logo__hide')
 
-  window.addEventListener(`scroll`, function (e) {
+  window.addEventListener(`scroll`, (e) => {
     const navOpac = this.scrollY / 100
 
     if (navOpac === 0) {

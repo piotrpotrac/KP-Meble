@@ -1,4 +1,4 @@
-export function loadPage() {
+export const loadPage = () => {
   window.addEventListener('load', () => {
     const loader = document.querySelector('.loader')
 

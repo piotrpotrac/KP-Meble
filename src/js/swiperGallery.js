@@ -1,4 +1,4 @@
-export function SwiperGalerry() {
+export const SwiperGalerry = () => {
   const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay: true,

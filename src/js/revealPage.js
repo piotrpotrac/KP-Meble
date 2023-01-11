@@ -1,7 +1,7 @@
-export function revealPage() {
+export const revealPage = () => {
   const allSections = document.querySelectorAll('.section')
 
-  const revealSection = function (entries, observer) {
+  const revealSection = (entries, observer) => {
     const [entry] = entries
 
     if (!entry.isIntersecting) return

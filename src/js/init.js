@@ -6,7 +6,7 @@ import { revealPage } from './revealPage'
 import { modalForm } from './modalForm'
 import { sendEmail } from './sendEmail'
 
-export function init() {
+export const init = () => {
   loadPage()
   hideBackground()
   switchNavMenu()

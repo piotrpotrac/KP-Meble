@@ -1,5 +1,5 @@
-export function sendEmail() {
-  const sendEmail = function () {
+export const sendEmail = () => {
+  const sendEmail = () => {
     Email.send({
       SecureToken: 'd1069e52-dcd4-427f-9ea1-f114cc9bc144',
       To: 'meblekp@gmail.com',
