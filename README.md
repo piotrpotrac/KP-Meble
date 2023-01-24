@@ -73,3 +73,22 @@ More info about prettier ( https://prettier.io/ )
 ## Learn More
 
 You can learn more in the [Vite App documentation](https://vitejs.dev/).
+
+# Links
+
+- Live Site URL: ( https://meblekp.pl/ )
+
+# Built with
+
+- Semantic HTML5 markup
+- SASS preprocecor
+- JS library (Swiper, SmtpJS )
+- CSS custom properties
+- Flexbox and grid
+- Desktop-first workflow
+- RWD
+
+# Author
+
+- Piotr Potrac - ( https://www.linkedin.com/in/potrac-p/ )
+- Github - ( https://github.com/piotrpotrac )
