@@ -1,0 +1,72 @@
+.cooperation {
+  margin: 7rem 0;
+
+  &__container {
+    margin: 0 8rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    justify-content: center;
+    grid-column-gap: 7rem;
+    grid-row-gap: 5rem;
+    justify-items: center;
+
+    @media only screen and (max-width: 1350px) {
+      margin: 0 15rem;
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0 20rem;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-column-gap: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0 15rem;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-column-gap: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 5rem;
+      grid-column-gap: 5rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 6rem;
+  }
+
+  &__card {
+    height: 40rem;
+    width: 28rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 25rem;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__svg {
+    width: 5rem;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+}

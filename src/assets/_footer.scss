@@ -1,0 +1,110 @@
+.footer {
+  background-image: $gradient;
+  color: #fff;
+  margin-bottom: 0;
+
+  &__row {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+
+    .footer__column {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      text-align: left;
+
+      @media only screen and (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      & .column__items {
+        display: block;
+        margin: 1rem auto;
+
+        & .column__item {
+          width: 100%;
+          margin: 1.5rem;
+          display: flex;
+          align-items: center;
+
+          & img {
+            width: 3rem;
+            margin-right: 1.5rem;
+            fill: #fff;
+          }
+
+          & a:link,
+          & a:visited {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          & a:hover,
+          & a:active {
+            color: $color-grey-light-2;
+          }
+        }
+      }
+
+      .company {
+        display: flex;
+
+        @media only screen and (max-width: $bp-large) {
+          margin-bottom: 0;
+        }
+
+        .slogan {
+          margin: auto 0;
+
+          h1 {
+            font-weight: 400;
+            font-size: 3rem;
+            @media only screen and (max-width: $bp-large) {
+              font-size: 2.4rem;
+            }
+          }
+
+          h3 {
+            font-weight: 300;
+            font-size: 1.6rem;
+
+            @media only screen and (max-width: $bp-large) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        .logo {
+          height: 10vh;
+          margin-right: 2rem;
+
+          @media only screen and (max-width: $bp-large) {
+            height: 15rem;
+            margin-right: 1rem;
+          }
+          @media only screen and (max-width: $bp-small) {
+            height: 10rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      & button {
+        width: 10rem;
+        margin: 0 auto;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-small) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
