@@ -1,4 +1,4 @@
-import './src/sass/main.scss'
-import { init } from './src/js/init.js'
+import './src/assets/main.scss'
+import { init } from './src/pages/init.js'
 
 init()
